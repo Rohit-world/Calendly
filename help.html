@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./help.css">
+</head>
+<body>
+        <div id="navbar">
+            <img id="logo" src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png" alt="">
+            <div id="options">
+                <a href="dashboard.html">Home</a>
+                <a href="#">Availibilty</a>
+                <a href="#">Integrations</a>
+                <a href="help.html">Help</a>
+                <a href="index.html">Logout▼</a>
+            </div>
+
+    </div>
+    <div class="container">
+        <div class="top">
+           <center><h1 class="heading">What can we help you with?</h1> </center>
+           <input type="text" name="" id="search" placeholder="Search our articles">
+           <div class="top2">
+
+           </div>
+           <div class="container-top3">
+            <center>Categories</center>
+            
+           </div>
+        </div>
+        <div id="top3">
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let arr1 = [
+        {
+            img: "",
+            title: "Setting up your first event"
+
+        },
+        {
+            img: "",
+            title: "Troubleshooting availability"
+        },
+        {
+            img: "",
+            title: "Schedule with video conferencing"
+        },
+        {
+            img: "",
+            title: "Embed option overview"
+        },
+        {
+            img: "",
+            title: "Automate tasks with Workflows"
+        },
+        {
+            img: "",
+            title: "Using Calendly for Chrome"
+        }   
+    ]
+
+    let arr2 = [
+        {
+            img: "https://theme.zdassets.com/theme_assets/1024340/4a9f357ea0372777b16e79fc71d19c06fc4feb81.svg",
+            title: "Getting Started",
+            text: "Learn the basics so you can start scheduling",
+            style: "myborder1"
+        },
+        {
+            img: "https://theme.zdassets.com/theme_assets/1024340/455f2c607b0e8adfef191786d74c8b1ba1fcb0ba.svg",
+            title: "Using Calendly",
+            text: "Discover how Calendly works from availability",
+            style: "myborder"
+        },
+        {
+            img: "https://theme.zdassets.com/theme_assets/1024340/44873607c0baa10dee90b96ef370412e8f823955.svg",
+            title: "Calendly For Mobile",
+            text: "Schedule on the go with our ios and Android mobile apps",
+            style: "myborder"
+
+        },
+        {
+            img: "https://theme.zdassets.com/theme_assets/1024340/fc29797cd48f0341c6d6410bf3e0dd245ce72140.svg",
+            title: "Integrations & Automations",
+            text: "Power your meeting lifecycle with tools and workflows",
+            style: "myborder"
+
+        },
+        {
+            img: "https://theme.zdassets.com/theme_assets/1024340/dccba9944cadb0f347e529cf936fae09dc04e42a.svg",
+            title: "Account Settings",
+            text: "Manage your subscription, single sign-on, and security",
+            style: "myborder"
+        },
+        {
+            img: "https://theme.zdassets.com/theme_assets/1024340/e7ed604187ba3070af932d4d59bd1aacd7f3a0ea.svg",
+            title: "Video Tutorials",
+            text: "Explore our how-to videos and feature overviews",
+            style: "myborder"
+        },
+    ]
+    
+    
+    function show(){
+        let a = document.getElementById("top3");
+
+        arr2.map((el)=>{
+            let div = document.createElement("div");
+
+            let img = document.createElement("img");
+            img.src = el.img;
+            let h4 = document.createElement("h4");
+            h4.innerText = el.title;
+            let p = document.createElement("p");
+            p.innerText = el.text;
+            div.append(img,h4,p)
+            
+            div.setAttribute("class", el.style)
+            a.append(div)
+        })
+        
+    }
+
+    show()
+</script>
