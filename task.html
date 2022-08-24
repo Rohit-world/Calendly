@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+<link rel="stylesheet" href="tasknavbar.css">
+<link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div id="navbar">
+        <img src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png" alt="">
+        <div id="options">
+            <a href="dashboard.html">Home</a>
+            <a href="#">Availibilty</a>
+            <a href="#">Integrations</a>
+            <a href="help.html">Help</a>
+            <a href="#">Logout▼</a>
+        </div>
+        
+    </div>
+
+
+
+
+    <div id="secondnavbar">
+        <button href=""> <.Back </button>
+        <p id="headline">Add One-on-One Event Type</p>
+        <div id="eventtype"><p>Your event type is <button id="type"><span>●</span> OFF</button></p></div>
+    </div>
+
+
+    <div id="language">
+        <p>Invitee language - </p>
+        <select name="" id="">
+           <option value="">English</option>
+           <option value="">French</option>
+           <option value="">German</option>
+           <option value="">Dutch</option>
+           <option value="">Ukrainiun</option>
+           <option value="">Italian</option>
+           <option value="">Spanish</option>
+        </select>
+    </div>
+    <section></section>
+<section id="mid">
+    <div class="texts">
+        <p><span>●</span> What event is this?</p>
+        <p class="grey">No location given</p>
+    </div>
+
+    <div class="buttons"><a href="dashboard.html">Cancel</a>
+    <button>Next</button></div>
+
+   
+
+</section>
+
+
+<div id="form">
+    <h4>Event name<span>*</span> </h4>
+    <input type="text" id="eventName">
+    <h4>Location<span>*</span></h4>
+    <select name="" id="location">
+    <option value="none">select location</option>
+    <option value="Zoom Meet ">Zoom</option>
+    <option value="Google Meet">Google meet</option>
+    <option value="Phone call">Phone call</option>
+    <option value="In Person Meet">In person Meet</option>
+    <option value="Microsoft Team">Microsoft Team</option>
+    <option value="Webex">Webex</option>
+    </select >
+
+    <h4>Description/Inctructions<span>*</span></h4>
+    <input id="description" type="text"  placeholder="Write a summary and any details you invitee should know about the event">
+    <h4 style="margin-bottom: -8px;">Event link<span>*</span></h4>
+    <p class="grey">calendly.com/rohitrs319791/</p>
+    <input type="url" id="link">
+
+    <h4>Duration<span>*</span></h4>
+
+    <select name="" id="duration">
+        <option value="none">select duration</option>
+        <option value="15 minutes ">15 min</option>
+        <option value="30 minutes">30 min</option>
+        <option value="45 minutes">45 min</option>
+        <option value="60 minutes">60 min</option>
+        <option value="90 minutes">90 min</option>
+        <option value="120 minutes">120 min</option>
+        </select >
+
+    
+<div class="buttons" id="lastbuttons"><a href="dashboard.html">Cancel</a>
+    <button onclick="storedata()" id="last-btn">+Create</button></div>
+
+</div>
+
+
+</body>
+</html>
+
+<script src="task.js"></script>
