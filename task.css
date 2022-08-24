@@ -1,0 +1,115 @@
+
+body{
+    font-family:sans-serif;
+}
+#language{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+
+}
+#language select{
+    color: blue;
+    margin-left: 5px;
+    border: none;
+}
+
+#mid{
+    display: flex;
+    padding: 0% 10%;
+    justify-content: space-between;
+    border: 0.5px solid rgb(229, 223, 223);
+}
+.texts{
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+
+}
+.grey{
+    color: grey;
+    font-size: 80%;
+}
+.texts span{
+    color:rgb(124, 28, 220);
+    font-size: 45px;
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+   
+    gap: 40px;
+}
+
+.buttons a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+.buttons >button{
+background-color: rgb(76, 76, 233);
+color: white;
+}
+#head{
+    display: flex;
+    justify-content: space-between;
+}
+
+#form{
+    display: grid;
+    padding: 0% 10%;
+    border: 0.5px solid rgb(177, 168, 168);
+    border-top: none;
+}
+
+input{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 10px ;
+    border: 1px solid grey;
+   
+}
+select>option{
+margin-left: 20px;
+padding: 20px 20px 20px 20px;
+}
+#form select{
+    width: 52%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 10px 0px ;
+    border: 1px solid grey;
+}
+#description::placeholder{
+margin-top: 0px;
+}
+
+#lastbuttons{
+margin-left: 85%;
+margin-bottom: 20px;
+
+
+
+
+}
+
+#last-btn{
+    padding: 10px;
+}
+
+h4 >span{
+    color: red;
+}
+
+
+.buttons>button:active{
+    background-color: rgb(82, 105, 236);
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+
+
