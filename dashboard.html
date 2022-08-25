@@ -16,15 +16,47 @@
             <a href="#">Availibilty</a>
             <a href="#">Integrations</a>
             <a href="help.html">Help</a>
-            <a href="#">Logout▼</a>
+            <a href="index.html">Logout▼</a>
         </div>
     </div>
 
-    <div id="secondnavbar">
-        <p>My calendly</p>
-        <button id="create-btn">+Create</button>
+    <div id="secondnavbar-dash">
+        <p>My calendly <span></span></p>
+        <button  onclick="taskpage()" id="create-btn">+Create</button>
+        
     </div>
+    <div id="headings">
+        <p>Event Types</p>
+        <p>Scheduled Events</p>
+        <p>Workflows</p>
+        <p>Routing Forms</p>
+    </div>
+    <section id="A">
+        
+        <input name="" placeholder="Filter" autocomplete="off" oninput="filterEvents()"  id="filter">
+    </section>
 
+
+<section id="B">
+    <div>
+        <img src="https://img.icons8.com/fluency/344/link.png" alt="">
+        <div id="url">
+            <P id="Name">Rohit</P>
+            <p>calendly.com/ <span  id="username"></span></p>
+        </div>
+        </div>
+    <div id="B1">
+        <button id="new-event-btn" onclick="taskpage()">+ New Event Type</button>
+    <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/344/external-setting-essentials-pack-tanah-basah-glyph-tanah-basah.png" alt="">
+    </div>
+</section>
+
+
+<section id="main">
+</section>
     
 </body>
+
 </html>
+
+<script src="dashboard.js"></script>
