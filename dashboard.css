@@ -1,8 +1,253 @@
+p{
+    font-family: sans-serif;
+}
 #create-btn{
-    background-color: blue;
+    background-color: rgb(47, 94, 235);
     color: white;
     padding: 0px 10px;
 }
 #create-btn:active{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+
+#headings{
+display: flex;
+gap: 5%;
+padding: 0% 10%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 1px;
+height: 80px;
+}
+
+#secondnavbar-dash{
+    display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+padding: 0% 10%;
+justify-content: space-between;
+padding-bottom: 10px;
+margin-top: 30px;
+
+}
+
+#headings>p{
+    padding-bottom: 62px;
+    border-bottom: solid 3px rgb(59, 59, 255);
+}
+#headings>p:first-child~p{
+    border: none;
+    color: rgb(122, 114, 114);
+
+}
+
+#headings>p:first-child~p:hover{
+    border-bottom: solid 3px grey;
+    color: black;
+}
+
+#secondnavbar-dash p{
+    font-size:180%;
+    margin-top: -4px;
+
+}
+#create-btn{
+    width: 100px;
+    height: 43px;
+   background-color:  rgb(47, 94, 235);
+}
+
+#A>input{
+    
+  
+outline: none;
+padding: 0% 10%;
+font-size: 16px;
+border: none;
+margin-top: 20px;
+width: 200px;
+}
+#B{
+    display: flex;
+
+    padding: 0% 10%;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+#new-event-btn{
+    margin-right: 10px;
+width: 200px;
+
+}
+
+#new-event-btn:hover{
+background-color: rgba(107, 107, 236, 0.142);
+}
+
+#url p{
+margin-top: -5px;
+}
+#url p:last-child{
+    margin-top: -10px;
+}
+#B img:last-child{
+    width:20px;
+    height: 20px;
+}
+#Name{
+    color: grey;
+
+}
+
+#url>p:last-child{
+    color: rgb(67, 67, 241);
+}
+#B img:first-child{
+margin-top: -5px;
+}
+#card{
+    margin-top: 20px;
+    width: 83%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:5%;
+    border-radius: 8px;
+    border-top: solid 8px rgba(98, 24, 225, 0.781);
+
+}
+
+
+
+#card div{
+    display: flex; justify-content: space-between;
+}
+
+#card img{
+    width: 20px;
+    height: 20px;
+
+}
+#card img:active{
+   width: 22px;
+   height: 22px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#card div:last-child>p{
+    margin-top: 8px;
+}
+
+
+
+
+#main{
+padding: 0% 10%;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+#eventname{
+font-size: large;
+}
+#duration{
+    color: grey;
+
+}
+#duration+p{
+    color:rgb(47, 94, 235);
+}
+
+#card button:hover{
+   background-color:  rgba(107, 107, 236, 0.142);;
+}
+
+.blue{
+    color:rgb(47, 94, 235);
+}
+
+
+#card div:last-child{
+    border-top: solid 0.2px rgb(188, 187, 187);
+    padding-top: 10px;
+    
+}
+#card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+
+}
+
+#B>div:first-child{
+    display: flex;
+   }
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+body{
+   padding: 0;
+   padding-right: 3%;
+}
+  #navbar{
+    padding-left: 3%;
+    
+  }
+   #navbar a{
+    font-size: 13px;
+   }
+   #navbar img{
+    margin-top: -5px;
+   }
+
+   #secondnavbar{
+    display: grid;
+   }
+
+
+
+   #main{
+    grid-template-columns: repeat(1,1fr);
+ 
+
+   }
+   #card{
+    width: 80%px;
+    margin: auto;
+    margin-top: 20px;
+   }
+
+   #B {
+    display: grid;
+   }
+   #B1{
+    display: flex;
+    margin-top: 20px;
+    
+   }
+
+   #B>div:first-child{
+    display: flex;
+   }
+   
+   
+   #new-event-btn{
+   width: 300px;
+   margin-left: 20%;
+  
+   }
+
+   #url{
+margin: 0px 0px 0px 0px;
+margin-bottom: -10px;
+}
+
+#headings p{
+    font-size: 12px;
+   
+    
+}
+
+
+
+  }
