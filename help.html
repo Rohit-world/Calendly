@@ -9,32 +9,38 @@
 </head>
 <body>
         <div id="navbar">
+          <div id="navleft">
             <img id="logo" src="https://assets.calendly.com/packs/frontend/media/logo-square-cd364a3c33976d32792a.png" alt="">
+            <b>Help Center</b>
+          </div>
+            
             <div id="options">
-                <a href="dashboard.html">Home</a>
-                <a href="#">Availibilty</a>
-                <a href="#">Integrations</a>
-                <a href="help.html">Help</a>
-                <a href="index.html">Logout▼</a>
+                <a href="dashboard.html">Developers</a>
+                <a href="#">Report Abuse</a>
+                <a href="#">Contact Us</a>
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
             </div>
 
     </div>
     <div class="container">
         <div class="top">
            <center><h1 class="heading">What can we help you with?</h1> </center>
-           <input type="text" name="" id="search" placeholder="Search our articles">
+           <div id="dsearch">
+                <img id="simg" src="https://findicons.com/files/icons/719/crystal_clear_actions/64/search.png" alt="">
+                <input type="text" name="" id="search" placeholder="Search our articles">
+           </div>
            <div class="top2">
+               <img id="mid" src="./image/mid.png" alt="">
 
            </div>
-           <div class="container-top3">
-            <center>Categories</center>
-            
-           </div>
+           
         </div>
+        <center id="cen">Categories</center>
         <div id="top3">
-
         </div>
     </div>
+    <div class="footer"></div>
 </body>
 </html>
 <script>
@@ -116,6 +122,7 @@
 
             let img = document.createElement("img");
             img.src = el.img;
+            
             let h4 = document.createElement("h4");
             h4.innerText = el.title;
             let p = document.createElement("p");

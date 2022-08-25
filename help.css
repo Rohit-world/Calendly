@@ -1,27 +1,35 @@
-
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 #navbar{
+    height:50px;
     font-family:sans-serif;
     display: flex;
 padding: 0% 10%;
 justify-content: space-between;
-padding-bottom: 10px;
+padding-top: 5px;
 border-bottom: 0.1px solid rgb(236, 228, 228);
 
 }
 #options{
+    width: 70%;
     display: flex;
     gap: 10%;
-    margin-right: 10%;
+    
 }
 #options>a{
     text-decoration: none;
-    
+   padding-top:8px; 
 }
     
 #logo{
-    width:40px;
-    height: 40px;
-    margin-top: 8px;
+    width:60px;
+    height: 50px;
+    
+
 }
 #options> a:first-child{
     font-weight: bold;
@@ -39,6 +47,21 @@ border-bottom: 0.1px solid rgb(236, 228, 228);
 }
 
 /* ///// */
+#navleft{
+    width:180px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+#navleft > b{
+    padding-top:20px;
+}
+.container{
+    margin-top:50px;
+}
+
 .top{
     width: 45%;
     margin: auto;
@@ -48,22 +71,44 @@ border-bottom: 0.1px solid rgb(236, 228, 228);
     font-size: 35px;
     font-weight:bold;
 }
-
+#dsearch{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+#simg{
+    height:32px;
+    z-index: 0;
+    position: relative;
+    top:30px;
+    left: 55px;
+}
 #search{
  width:90%;
  height: 60px;
  border: 1px rgb(202, 202, 202) solid;
  border-radius:50px;
-
  margin-top:30px;
+ padding-left: 10%;
+ font-size:20px;
 }
-
+#mid{
+    height:250px;
+    width:700px;
+    margin: auto;
+}
 img{
     height: 100px;
+    margin-left: 6%;
+    margin-top:20px;
 }
-
+#cen{
+    font-size:35px;
+    font-weight:bold;
+    margin: 20px 0 20px 0; 
+}
 #top3{
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -73,8 +118,17 @@ img{
 .myborder1{
  border: 1px solid blue;
  width:100%;
+ text-align: center;
+ padding:30px;   
+
 
 }
-/* .myborder:hover{
+.myborder{
+text-align: center;
+padding:30px;   
+border: 1px solid rgb(229, 226, 226);
+}
+.myborder:hover{
+    box-shadow: 0px 1px 14px 4px rgba(17, 17, 26, 0.18);
 
-} */
+}
