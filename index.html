@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    
+
+
+
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        p {
+            color: red;
+            /* font-family: 'Gilroy-Medium', sans-serif;  */
+            font-family: 'Gilroy-Bold', sans-serif;
+        }
+    </style>
 
     <!-- section 1 style part -->
     <style>
@@ -60,7 +80,7 @@
             margin: 0px 0px 32px;
             line-height: 35px;
             font-size: 20px;
-            font-family:'Gilroy'
+            font-family: 'Gilroy-Medium', sans-serif;
         }
 
 
@@ -74,7 +94,7 @@
             color: white;
             margin: 8px 0px;
             padding: 10px 18px;
-            font-family:'Gilroy-Bold';
+            font-family: 'Gilroy-Medium', sans-serif;
             font-size:18px;
             border-radius: 7px;
         }
@@ -88,7 +108,7 @@
 
     <!-- secttion 2 style part -->
     <style>
-                @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+             
 
         #section_2{
             width: 100%;
@@ -98,7 +118,7 @@
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: auto;
-            background-color:rgb(250, 255, 250);
+            background-color:rgb(250, 250, 250);
 
         }
 
@@ -119,7 +139,7 @@
             margin: auto;
             text-align: center;
             font-size: 28px;
-            font-family:'Gilroy-Heavy'
+            font-family: 'Gilroy-Medium', sans-serif;
         }
 
         #TagSimplisecond{
@@ -130,7 +150,7 @@
             margin: auto;
             text-align: center;
             font-size: 48px;
-            font-family:'Gilroy-Heavy'
+            font-family: 'Gilroy-Medium', sans-serif;
         }
 
         #spn2{  
@@ -212,24 +232,34 @@
  
         .parent{
             display: flex;
-            width: 95%;
+            width: 80%;
            
             margin: auto;
             flex-wrap: wrap;
             justify-content: space-between;
             align-content: space-between;
+            transition:0.2s;
             /* padding: 20px; */
         }
-        
+
         .parent>div{
             flex-basis: 300px;
             margin-bottom: 20px;
-            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             text-align: left;
-            padding: 20px 20px 20px 20px;
-            transition: transform 1s;
+            padding: 20px 20px 40px 40px;
+            transition: 0.2s;
             border-radius: 5px;
 
+        }
+
+        .box{
+            transition: 0.5s;
+        }
+
+        .box:hover{
+            transform: translateZ(20px);
+           
         }
         .parent>div>h1{
             
@@ -245,7 +275,7 @@
             margin: 0px 0px 32px;
 
             font-size: 20px;
-            font-family:'Gilroy'
+            font-family: 'Gilroy-Medium', sans-serif;
         }
 
         .parent>div:hover{
@@ -262,16 +292,314 @@
     </style>
 
      <!-- secttion 5 style part -->
+     <style>
+        #section_4{
+            width: 100%;
+            height: auto;
+            border: 1px solid transparent;
+            /* background-color: #0e2038; */
+          
+            
+          
+        }
+ 
+        .parent_one{
+            display: flex;
+            width: 80%;
+           
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            /* padding: 20px; */
+        }
+
+        .parent_one>div{
+            flex-basis: 300px;
+            margin-bottom: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            text-align: left;
+            padding: 40px 40px 40px 40px;
+            transition: transform 1s;
+            border-radius: 5px;
+
+        }
+        .parent_one>div>h1{
+            
+            color: #0b3558;
+            margin: 0px 0px 32px;
+
+            font-size: 20px;
+            font-family:'Gilroy-bold'
+        }
+        .parent_one>div>p{
+            
+            color: #5a6065;
+            margin: 0px 0px 32px;
+
+            font-size: 20px;
+            font-family: 'Gilroy-Medium', sans-serif;
+        }
+
+        .parent_one>div:hover{
+            transform: translateZ(20px);
+        }
+
+        .parent_one>div>img{
+            width: 10%;
+        }
+
+        
+
+
+    </style>
 
     <style>
         
     </style>
 
+    <!-- section 7 style -->
+
+    <style>
+        #section_41{
+            width: 100%;
+            height: 500px;
+            border: 1px solid transparent;
+            /* background-color: #0e2038; */
+           
+            margin: auto;
+        }
+        #spend_book{
+            width: 70%;
+            height: 400px;
+            border: 1px solid transparent;
+            margin: auto;
+        }
+
+        #spend_h{
+            font: bold;
+            font-weight: bold;
+            color: #0e2038;
+            margin: 0px 0px 32px;
+            text-align: center;
+            font-size: 50px;
+            font-family:'Gilroy-bold';
+            padding: 50px;
+        }
+
+        #pdiv{
+            margin: auto;
+            border: 1px solid transparent;
+            width: 80%;
+        }
+        #book_p{
+            
+          /* font-family: ; */
+          color: #0e2038;
+           
+            text-align: center;
+            font-size: 22px;
+            font-family: 'Gilroy-Medium', sans-serif;
+           
+            line-height: 45px;
+        
+        }
+
+
+
+
+    </style>
+
+    <!-- section 8 style -->
+
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+        #section_8{
+            width: 100%;
+            height: auto;
+            border: 1px solid transparent;
+            margin: auto;
+           
+        }
+        #cont8{
+            width: 95%;
+            height: auto;
+            margin: auto;
+            border: 1px solid transparent;
+            display: grid;
+            grid-template-columns: 40% 50%;
+            grid-template-rows: auto;
+            gap: 5%;
+            padding: 72px 24px;
+        }
+        #sec-div-8{
+            border: 1px solid transparent;
+        }
+        #cal8{
+            font-weight: bold;
+            color: #006bff;
+            font-family:'Gilroy-Bold';  
+            margin: 0px 0px 32px;
+            font-size: 16px;
+            /* font-family:16px Gilroy, -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; */
+            /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        }
+        #take8{
+            font-weight: bold;
+            color: #0b3558;
+            margin: 0px 0px 32px;
+
+            font-size: 52px;
+            font-family:'Gilroy-Heavy'
+            /* font-family:100px Gilroy, -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; */
+
+        }
+        #spn8{
+            color: #006bff;
+        }
+
+        #calTag8{
+         
+            color: #476788;
+            margin: 0px 0px 32px;
+
+            font-size: 20px;
+            font-family: 'Gilroy-Medium', sans-serif;
+        }
+
+
+        
+        #sec-div-8{
+            border: 1px solid transparent;
+        }
+        #start8{
+            border: 0px;
+            background-color: #006BFF;
+            color: white;
+            margin: 8px 0px;
+            padding: 10px 18px;
+            font-family:'Gilroy-Bold';
+            font-size:18px;
+            border-radius: 7px;
+        }
+
+
+
+        
+
+
+    </style>
+
+    <!-- footer -->
+        <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+            body{
+	        line-height: 1.5;
+	        font-family: 'Poppins', sans-serif;
+                    }
+                        *{
+            margin:0;
+            padding:0;
+                        box-sizing: border-box;
+                    }
+            .container{
+                max-width: 1170px;
+                margin:auto;
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            ul{
+                list-style: none;
+            }
+            .footer{
+                background-color: #24262b;
+                padding: 70px 0;
+            }
+            .footer-col{
+            width: 25%;
+            padding: 0 15px;
+            }
+            .footer-col h4{
+                font-size: 18px;
+                color: #ffffff;
+                text-transform: capitalize;
+                margin-bottom: 35px;
+                font-weight: 500;
+                position: relative;
+            }
+            .footer-col h4::before{
+                content: '';
+                position: absolute;
+                left:0;
+                bottom: -10px;
+                background-color: #e91e63;
+                height: 2px;
+                box-sizing: border-box;
+                width: 50px;
+            }
+            .footer-col ul li:not(:last-child){
+                margin-bottom: 10px;
+            }
+            .footer-col ul li a{
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: 300;
+                color: #bbbbbb;
+                display: block;
+                transition: all 0.3s ease;
+            }
+            .footer-col ul li a:hover{
+                color: #ffffff;
+                padding-left: 8px;
+            }
+            .footer-col .social-links a{
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                background-color: rgba(255,255,255,0.2);
+                margin:0 10px 10px 0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: #ffffff;
+                transition: all 0.5s ease;
+            }
+            .footer-col .social-links a:hover{
+                color: #24262b;
+                background-color: #ffffff;
+            }
+
+            /*responsive*/
+            @media(max-width: 767px){
+            .footer-col{
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            }
+            @media(max-width: 574px){
+            .footer-col{
+                width: 100%;
+            }
+            }
+
+
+
+
+
+</style>
+
 </head>
-<body>
+
+
+  
     
     <!-- secction 1 part -->
-    <section id="section_1">
+    <section id="section_1" >
         <div id="cont1">
             <div id="sec-div-1">
                 <h1 id="take">Easy scheduling <span id="spn"> ahead</span></h1>
@@ -285,14 +613,989 @@
     </section>
 
      <!-- section 2 part  -->
-    <section id="section_2">
+    <section id="section_2" data-aos="zoom-out-up">
         <div id="simpli">
             <p id="TagSimpli">Simplified scheduling for more than <span id="spn2">10,000,000</span>  users worldwide</p>
         </div>
     </section>
 
      <!-- section 3 part  -->
-     <section id="section_3">
+     <section id="section_3" data-aos="zoom-out-up">
+        <div id="slide-container" >
+            <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div>
+            <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div>
+            <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div> <div id="slide-images">
+
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/Y595RQBDR1fW5blQZfd9l/f34b8ee5d40aa13af7b0fb015e86e8d3/Vector__19_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/42drnxHfXrNOGKnVE9iA3r/7a7cf32f65bd03e0d1d48a6b02bde3d5/Loreal__1_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6PFPRWMRMxRXthyXYcDRiR/6f26aaf48346fb5dfa8318bb4a403e02/Compass__2_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/5DR8HfsFIbSQZlUXsBqjWN/9d3183fc00336917d96cef59832b5403/Twilio-logo-red.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/1Q5BQTaWAplnUICA96OWOw/be456a6b21b030de107077f2155ce467/Vector__22_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2hJsUFIbIVEEEKj6R2YwR1/87ce3bb8fb245387aa9c376db473c079/ebay__3_.svg" alt="">
+            </div>
+            <div id="slide-images">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/6aSAknGku3oEB7jL7xEjLs/244ce9c4c65c8425c8695a50ece73a4d/logo-ancestry.svg" alt="">
+            </div>
+            
+            
+            
+        </div>
+     </section>
+
+     <section id="section_2" data-aos="zoom-out-up">
+        <div id="simpli" >
+            <p id="TagSimplisecond">We make it easy to get started</p>
+        </div>
+    </section>
+
+     <!-- section 4 part  -->
+     <section id="section_4" data-aos="zoom-in-up">
+        <div class="parent" data-aos="zoom-out-up">
+          
+           
+          
+            <div class="box" data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
+                <h1 data-aos="zoom-out-up">Create simple rules</h1>
+                <p data-aos="zoom-out-up">Let Calendly know your availability preferences and it'll do the work for you.</p>
+                
+    
+            </div>
+            <div class="box" data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
+                <h1 data-aos="zoom-out-up">Share your link</h1>
+                <p data-aos="zoom-out-up">Send guests your Calendly link or embed it on your website.</p>
+              
+    
+            </div>
+            <div class="box" data-aos="zoom-out-up">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
+                <h1 data-aos="zoom-out-up">Get booked</h1>
+                <p data-aos="zoom-out-up">They pick a time and the event is added to your calendar.</p>
+                
+    
+            </div>
+        </div>
+     </section>
+
+     <!-- section 5 part  -->
+     <section id="section_2" data-aos="zoom-in-up">
+        <div id="simpli" data-aos="zoom-out-up">
+            <p id="TagSimplisecond" data-aos="zoom-out-up">Scheduling for any meeting type</p>
+        </div>
+    </section>
+
+     <section id="section_4" data-aos="zoom-in-up">
+        <div data-aos="zoom-out-up" class="parent_one">
+          
+           
+          
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/6eeiV8vQ5r4wapPkjxwmVs/b70237791206b5580e72d77d0fbb60ff/icon-customers.svg" alt="">
+                <h1 data-aos="zoom-out-up">One-on-one</h1>
+                <p data-aos="zoom-out-up">Let your clients and colleagues select open meeting types from your schedule</p>
+                
+    
+            </div>
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/2ISl5s3a5RId9XpeuTJBxV/52a26ea61be5da23f0c2a83e73c2a9e6/Icon-Education.svg" alt="">
+                <h1 data-aos="zoom-out-up">Group</h1>
+                <p data-aos="zoom-out-up">Book events for multiple attendees such as webinars and training sessions</p>
+              
+    
+            </div>
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/6765yY5ajTUxB9MIz4nToI/00f0de305b8ac2ff4ad0ef7941a75a28/collective.svg" alt="">
+                <h1 data-aos="zoom-out-up">Collective</h1>
+                <p data-aos="zoom-out-up">Schedule across your team’s calendars for events you co-host with others</p>
+                
+    
+            </div>
+            <div data-aos="zoom-out-up">
+                <img src="https://images.ctfassets.net/k0lk9kiuza3o/35pgmxHTHZfJMr4HwHGibz/ee1cb916d14a7971fbaa8aa24766cf25/round_robin.svg" alt="">
+                <h1>Round robin</h1>
+                <p>Balance hosting responsibilities for your team automatically</p>
+                
+    
+            </div>
+            
+        </div>
+     </section>
+
+
+
+     <!-- section 6 part -->
+     <section id="section_2" data-aos="zoom-in-up">
+        <div id="simpli" data-aos="zoom-out-up">
+            <p data-aos="zoom-out-up" id="TagSimplisecond">The right Calendly for the work you do</p>
+        </div>
+    </section>
+
+     <section id="section_4" data-aos="zoom-in-up">
+        <div class="parent_one">
+          
+           
+          
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/2k4JUWdoiELNlIOiAgY8ZP/989d5854e82505f2c711363ed9d002e4/Icon-Sales.svg" alt="">
+                <h1 data-aos="zoom-out-up">Sales</h1>
+                <p data-aos="zoom-out-up">Let your clients and colleagues select open meeting types from your schedule</p>
+                
+    
+            </div>
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/2WoX1M1Mu6lUwJrfSGjX5b/a42359992f267f338df0161ba40acc7f/Icon-Demand-Generation.svg" alt="">
+                <h1 data-aos="zoom-out-up">Marketing</h1>
+                <p data-aos="zoom-out-up">Book events for multiple attendees such as webinars and training sessions</p>
+              
+    
+            </div>
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/6KO0vF2ofioxGmQJGQBdT1/329be086ba555bf2393dd99c32753521/Icon-Customer-Success.svg" alt="">
+                <h1 data-aos="zoom-out-up">Costomer Service</h1>
+                <p data-aos="zoom-out-up">Schedule across your team’s calendars for events you co-host with others</p>
+                
+    
+            </div>
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/1kecwP9aYPUOD7cgexPgW5/bf271becdb7ff17e2939353e82792f9c/Icon-Revenue-Ops.svg" alt="">
+                <h1 data-aos="zoom-out-up">Revenue Options</h1>
+                <p data-aos="zoom-out-up">Balance hosting responsibilities for your team automatically</p>
+                
+    
+            </div>
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/Qze1UNJ9kIVk4kZVopC7z/ac18ecb4e93a0c7096c132181fa1f2bf/Icon-Recruiting.svg" alt="">
+                <h1 data-aos="zoom-out-up">Recruting</h1>
+                <p data-aos="zoom-out-up">Schedule across your team’s calendars for events you co-host with others</p>
+                
+    
+            </div>
+            <div data-aos="zoom-out-up">
+                <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/4y0cQDGC4yqwssAQYvFivo/3fec9fbec6f26274fd09b9bcffc18c32/IT_Solution.svg" alt="">
+               <h1 data-aos="zoom-out-up" >Information Technology</h1>
+                <p data-aos="zoom-out-up" data-aos="zoom-out-up">Balance hosting responsibilities for your team automatically</p>
+                
+    
+            </div>
+            
+        </div>
+     </section>
+
+     <!-- section 7 part -->
+
+     <section id="section_41" data-aos="zoom-in-up">
+        <div data-aos="zoom-out-up" id="spend_book">
+            <h1 data-aos="zoom-out-up" id="spend_h">
+                Do more of what you do best
+            </h1>
+            <div data-aos="zoom-out-up" id="pdiv">
+                <p data-aos="zoom-out-up" id="book_p">
+                    With scheduling hassles and interruptions gone, your day is cleared for accomplishment.
+                </p>
+            </div>
+           
+        </div>
+     </section>
+
+     <!-- section 8 part -->
+
+     <section id="section_8" data-aos="zoom-in-up">
+        <div data-aos="zoom-out-up" id="cont8">
+            <div data-aos="zoom-out-up" id="sec-div-8">
+                <h6 data-aos="zoom-out-up" id="cal8">WORKFLOW MANAGEMENT</h6>
+                <h1 data-aos="zoom-out-up" id="take8">Automate reminders and follow-ups</h1>
+                <p data-aos="zoom-out-up" id="calTag8">Calendly puts your entire meeting workflow on autopilot, sending everything from reminder emails to thank you notes, so you can focus on the work only you can do. It’s like getting an assistant, even if you’re a business of one.</p>
+               
+            </div>
+            
+            <div data-aos="zoom-out-up" id="sec-div-8"><img style="width:100%" src="https://images.ctfassets.net/k0lk9kiuza3o/5PxkQEs6JHgXUIbi3ZGVgT/7b603afdf7838c24c46b1bac683cffb5/features_overview_3__1_.png?w=1138&h=1245&q=50&fm=webp" alt=""></div>
+        </div>
+            
+    </section>
+
+     <!-- section 9 part -->
+
+     <section id="section_8" data-aos="zoom-in-up">
+        <div data-aos="zoom-out-up" id="cont8">
+            <div data-aos="zoom-out-up" id="sec-div-8"><img style="width:100%" src="https://images.ctfassets.net/k0lk9kiuza3o/wyOsTDMiF1GBZ0HYBEwCX/8f1181d4039431b7873443c8166cf543/Calendly-Automation-Streamline.png?w=1164&h=932&q=50&fm=webp" alt=""></div>
+
+            <div data-aos="zoom-out-up" id="sec-div-8">
+                <h6 data-aos="zoom-out-up" id="cal8">ON-DEMAND SCHEDULING</h6>
+                <h1 data-aos="zoom-out-up" id="take8">Make more connections and reduce cancellations</h1>
+                <p data-aos="zoom-out-up" id="calTag8">Prospects can schedule meetings in just a few clicks – whenever the moment is right. And cancellations go down because rescheduling is easy, fast, and on their terms.</p>
+               
+            </div>
+            
+        </div>
+            
+    </section>
+
+
+     <!-- section 10 part -->
+
+     <section id="section_8" data-aos="zoom-in-up">
+        <div data-aos="zoom-out-up" id="cont8">
+            <div data-aos="zoom-out-up" id="sec-div-8">
+                <h6 data-aos="zoom-out-up" id="cal8">THE COURTEOUS APPROACH</h6>
+                <h1 data-aos="zoom-out-up" id="take8">Delight invitees with modern scheduling</h1>
+                <p data-aos="zoom-out-up" id="calTag8">Time is a precious commodity. Calendly is the courteous way to book meetings and other appointments, because scheduling with just a few clicks makes the most of everyone's time.</p>
+               
+            </div>
+            
+            <div data-aos="zoom-out-up" id="sec-div-8"><img style="width:100%" src="https://images.ctfassets.net/k0lk9kiuza3o/zLDG89VPUNmWTS6SXf3W4/31f28cdea9417112d43e2270f554c289/Calendly-Availability-In-A-Click.png?w=1180&h=1107&q=50&fm=webp" alt=""></div>
+        </div>
+            
+    </section>
+
+
+      <!-- section 11 part  -->
+      <section id="section_3" data-aos="zoom-in-up">
         <div id="slide-container">
             <div id="slide-images">
 
@@ -1058,41 +2361,28 @@
             
         </div>
      </section>
-
-     <section id="section_2">
-        <div id="simpli">
-            <p id="TagSimplisecond">We make it easy to get started</p>
-        </div>
-    </section>
-
-     <!-- section 4 part  -->
-     <section id="section_4">
-        <div class="parent">
-          
-           
-          
-            <div>
-                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
-                <h1>Create simple rules</h1>
-                <p>Let Calendly know your availability preferences and it'll do the work for you.</p>
-                
-    
-            </div>
-            <div>
-                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
-                <h1>Share your link</h1>
-                <p>Send guests your Calendly link or embed it on your website.</p>
-              
-    
-            </div>
-            <div>
-                <img src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
-                <h1>Get booked</h1>
-                <p>They pick a time and the event is added to your calendar.</p>
-                
-    
-            </div>
-        </div>
-     </section>
 </body>
+<body>
+    
+   
+  
+  
+      
+  
+  
+  
 </html>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:10,
+    duration:2000,    
+  });
+</script>
+
+
+
+
