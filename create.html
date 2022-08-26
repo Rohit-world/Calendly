@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./create.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+             <div class="left"> 
+                
+                <!--<img src="https://cdn-icons-png.flaticon.com/128/2722/2722991.png" alt=""> -->
+                <i class="fa-solid fa-angle-left"></i>  <p>Back</p>  
+            
+            </div>
+            <div id="cen">Create New Event Type</div>
+        </div>
+
+        <div id="middle">
+
+        </div>
+        <b>More ways to meet</b>
+        <div id="bottom">
+
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/518d9f4736.js" crossorigin="anonymous"></script>
+<script>
+
+let arr1 = [
+    { 
+        
+        img: "./image/img1.png",
+        title: "One-on-One",
+        text:"Let an invitee pick a time to meet with you."
+    },
+    { 
+        img: "./image/img1.png",
+        title: "Group",
+        text:"Let multiple invitees meet with you at one time."
+    },
+    { 
+        img: "./image/img1.png",
+        title: "Collective",
+        text:"Host an event with another person and let invitees pick a time when you’re all available."
+    },
+    { 
+        img: "./image/img1.png",
+        title: "Round Robin",
+        text:"Create an event that cycles between multiple hosts."
+    }
+]
+
+function show(){
+   let a = document.getElementById("middle");
+
+   arr1.forEach((ele)=>{
+     let img = document.createElement("img")
+     img.src = ele.img;
+     let b = document.createElement("b");
+     b.innerText = ele.title;
+     let p = document.createElement("p");
+     p.innerText = ele.text;
+     let btn = document.createElement("button")
+     btn.innerText = "Create"
+     btn.setAttribute("class","btn")
+    let div = document.createElement("div");
+    div.setAttribute("class","mid")
+    div.append(b,p)
+    let con = document.createElement("div");
+    let right = document.createElement("div");
+    right.setAttribute("class","ryt")
+    right.append(div,btn)
+    con.append(img,right)
+    con.setAttribute("class","flex")
+    a.append(con)
+   })
+}
+
+show()
+
+let arr2 = [
+    {
+        img: "./image/img2.png",
+        title: "One-off meeting",
+        text: "Invite someone to pick a time to meet with you."
+    },
+    {
+        img: "./image/img1.png",
+        title: "Meeting poll",
+        text: "Schedule a group meeting after offering times for a vote."
+    }
+]
+
+function showbox(){
+let c = document.getElementById("bottom");
+arr2.forEach((el)=>{
+    let img = document.createElement("img");
+    img.src = el.img;
+    let t = document.createElement("h4");
+    t.innerText = el.title;
+    let p = document.createElement("p");
+    p.innerText = el.text;
+    let btn = document.createElement("button");
+    btn.innerText = "Create"
+    
+    btn.setAttribute("class","btn2")
+    let div = document.createElement("div");
+    div.setAttribute("class", "botbox")
+    div.append(img,t,p,btn)
+    c.append(div)
+})
+}
+
+showbox()
+
+</script>
+
