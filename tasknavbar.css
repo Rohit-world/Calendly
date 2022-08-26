@@ -9,8 +9,8 @@ border-bottom: 0.1px solid rgb(236, 228, 228);
 }
 #options{
     display: flex;
-    gap: 10%;
-    margin-right: 10%;
+    gap: 12%;
+    margin-right: 5%;
 }
 #options>a{
     text-decoration: none;
@@ -82,4 +82,26 @@ button{
 }
 #type>span{
     font-size: large;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    body{
+        padding: 0;
+      
+     }
+    #navbar{
+        padding-left: 3%;
+        
+      }
+       #navbar a{
+        font-size: 13px;
+       }
+       #navbar img{
+        margin-top: -5px;
+       }
+       #options{
+        margin-right:18%;
+       }
 }
