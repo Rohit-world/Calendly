@@ -76,6 +76,26 @@ border-bottom: 0.1px solid rgb(236, 228, 228);
     margin: auto;
     display: flex;
 }
+#top2{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    color: blue;
+    font-size:20px;
+}
+#top2>div>img{
+
+    height: 50px;
+    width:50px;
+}
+.top2con{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.top2con>span{
+    margin-left:15px;
+}
 #simg{
     height:32px;
     z-index: 0;

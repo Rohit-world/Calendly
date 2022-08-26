@@ -30,8 +30,9 @@
                 <img id="simg" src="https://findicons.com/files/icons/719/crystal_clear_actions/64/search.png" alt="">
                 <input type="text" name="" id="search" placeholder="Search our articles">
            </div>
-           <div class="top2">
-               <img id="mid" src="./image/mid.png" alt="">
+           <div id="top2">
+               <!-- <img id="mid" src="./image/mid.png" alt=""> -->
+
 
            </div>
            
@@ -46,31 +47,47 @@
 <script>
     let arr1 = [
         {
-            img: "",
+            img: "https://ouch-cdn2.icons8.com/3RdTYrjdzoxe6i-ERpAVJdOBAf7JF_2Y1E0nC17qpZ8/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTMy/L2ZkNDcyYTgwLWMz/ZjYtNDY4ZC1hZGNi/LWE0MDM1NGUwZWUw/Zi5zdmc.png",
             title: "Setting up your first event"
 
         },
         {
-            img: "",
+            img: "https://ouch-cdn2.icons8.com/HLli_MjLDZPdhe1Illhwp03n-1OGt2ufVygOyODoh1Y/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTI3/LzA5ZWEzOGY3LTFh/NTMtNGEyOC05ZGQ2/LTE0ODQ0YTc0NzM2/MC5wbmc.png",
             title: "Troubleshooting availability"
         },
         {
-            img: "",
+            img: "https://ouch-cdn2.icons8.com/JhSFEGRpkj8kI6oNUWkjzLsc5-p7uoNjHkJ3xvS5mOY/rs:fit:256:192/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDUz/L2NiMzRkNmIyLTdm/ZWQtNGE3Mi1iZjVj/LTQ4OGRhZDU3MWY5/ZC5zdmc.png",
             title: "Schedule with video conferencing"
         },
         {
-            img: "",
+            img: "https://ouch-cdn2.icons8.com/rvobf2RB6hOX6_Fy6zwD73EgqL3Lz0B286bqZg-PBBg/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjg0/LzFhZTk4ZmM2LWFi/NjMtNDIwOC1iOTBi/LThjYjU1Y2I5ZmUz/NC5zdmc.png",
             title: "Embed option overview"
         },
         {
-            img: "",
+            img: "https://ouch-cdn2.icons8.com/h4hQv2wBtsx0JlQMFCus7UPSBlNwyI-Sboh5quuzxFU/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTg5/LzM1MmJmYzI0LTc4/MzYtNDFkOC04NzVh/LWJhY2Q5MWUzMDE4/Yi5wbmc.png",
             title: "Automate tasks with Workflows"
         },
         {
-            img: "",
+            img: "https://ouch-cdn2.icons8.com/zoaYhvhRi80mUdrmDksvRHsC6Q80S_irHr_4SDcjCfI/rs:fit:256:144/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMjIv/MmZiZDU3YTYtNzE2/Yy00ZTFjLTlhNDgt/NDM0YzE1NzFlNzkw/LnN2Zw.png",
             title: "Using Calendly for Chrome"
         }   
     ]
+
+    function showtop(){
+        let b = document.getElementById("top2");
+        arr1.forEach((el)=>{
+           let img = document.createElement("img");
+           img.src = el.img;
+           let t = document.createElement("span");
+           t.innerText = el.title;
+           let div = document.createElement("div");
+           div.append(img,t);
+           div.setAttribute("class","top2con")
+           b.append(div);
+        })
+    }
+    
+    showtop()
 
     let arr2 = [
         {
