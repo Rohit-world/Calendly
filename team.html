@@ -1,143 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>team</title>
-      <link rel="stylesheet" href="footer.css">
-      <link rel="stylesheet" href="navbar.css">
-     
+
+      <!-- <link rel="stylesheet" href="team.css"> -->
+
       <style>
-            html, body, * {
-    font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  
-}
- 
+            html,
+            body,
+            * {
+                  font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: rgb(80, 77, 77);
 
-#bigdiv{
-      /* border: 1px solid red; */
-      width: 1200px;
-      /* width: 80%; */
-      height: 100%;
-      margin: auto;
-      display: grid;
-      grid-template-columns:repeat(2,1fr);
-      gap: 5%;
-      /* position:sticky ; */
-}
-#big1{
-      /* border: 1px solid green; */
-      width: 100%;
-      height: 100%;
-      margin: auto;
-      gap: 10%;
-
-}
-#big2{
-    
-      /* border: 1px solid greenyellow; */
-      width: 100%;
-      height: 100%;
-      margin: auto;
-
-}
-#backimg{
-      width:500px;
-      height:400px;
-}
-#smart{
-      font-size: 65px;
-      color: rgb(7, 7, 75);
-}
-#calend{
-      font-weight: 600;
-      color: rgb(33, 33, 231);
-}
-#whether{
-      font-size: 20px;
-      gap: 50px;
-}
-#startbtn1{
-      border-radius: 10%;
-      margin-right: 3%;
-      font-size: 20px;
-      font-weight: 600;
-      padding: 3%;
-      border: 0ch;
-      color: aliceblue;
-      background-color: rgb(62, 62, 254);
-}
-#startbtn2{
-      border-radius: 10%;
-      border: 1px solid rgb(62, 62, 254);
-      color: rgb(62, 62, 254);
-      margin-right: 3%;
-      font-size: 20px;
-      font-weight: 600;
-      padding: 3%;
-      /* background-color: blue; */
-}
-#startbtn1:hover,#startbtn2:hover{
-      transform: scale(1.05);
-}
+            }
 
 
+            #bigdiv {
+                  /* border: 1px solid red; */
+                  width: 1200px;
+                  /* width: 80%; */
+                  height: 100%;
+                  margin: auto;
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 5%;
+                  /* position:sticky ; */
+            }
+
+            #big1 {
+                  /* border: 1px solid green; */
+                  width: 100%;
+                  height: 100%;
+                  margin: auto;
+                  gap: 10%;
+
+            }
+
+            #big2 {
+
+                  /* border: 1px solid greenyellow; */
+                  width: 100%;
+                  height: 100%;
+                  margin: auto;
+
+            }
+
+            #backimg {
+                  width: 500px;
+                  height: 400px;
+            }
+
+            #smart {
+                  font-size: 60px;
+                  color: #002142;
+            }
+
+            #calend {
+                  font-weight: 600;
+                  color: rgb(33, 33, 231);
+            }
+
+            #whether {
+                  font-size: 20px;
+                  gap: 50px;
+            }
+
+            #startbtn1 {
+                  border-radius: 15px;
+                  margin-right: 3%;
+                  font-size: 20px;
+                  font-weight: 600;
+                  padding: 3%;
+                  border: 0ch;
+                  color: aliceblue;
+                  background-color: rgb(62, 62, 254);
+                  height: 45px;
+                  
+            }
+
+            #startbtn2 {
+                  border-radius: 15px;
+                  border: 1px solid rgb(62, 62, 254);
+                  color: rgb(62, 62, 254);
+                  margin-right: 3%;
+                  font-size: 20px;
+                  font-weight: 600;
+                  padding: 3%;
+                  background-color: white;
+                  height: 45px;
+                 
+            }
+
+            #startbtn1:hover,
+            #startbtn2:hover {
+                  transform: scale(1.05);
+            }
+
+            #logo {
+                  margin-left: -10%;
+            }
+
+            a {
+                  text-decoration: none;
+            }
+
+            #mid {
+                  display: flex;
+                  margin-top: -5px;
+            }
+
+            #navbar {
+                  display: flex;
+                  /* border: 1px solid black; */
+                  justify-content: space-evenly;
+                  padding: 30px;
+                  position: sticky;
+                  top: 0;
+
+            }
+
+            a:hover {
+                  color: rgb(0, 107, 255);
+            }
+
+            ul {
+                  list-style-type: none;
+                  font-weight: 600;
+                  font-size: 16px;
+
+                  display: flex;
+                  gap: 40px;
+            }
+
+            a {
+                  color: rgb(80, 77, 77);
+                  font-family: sans-serif;
+            }
+
+            #button11 {
+                  margin-top: 5px;
+                  font-size: 15px;
+                  font-weight: bold;
+                  padding: 10px 15px;
+                  color: white;
+                  border: 0px;
+                  border-radius: 10px;
+                  background-color: rgb(0, 107, 255);
+            }
       </style>
 </head>
+
 <body>
-      <div id="navbar">
+      <div style="width: 1200px; margin: auto;" id="navbar">
             <div id="logo">
-      
-     
-             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTgwLjkxIDM4MS41MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMwMDZiZmY7fS5jbHMtMntmaWxsOiMwYWU4ZjA7fTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PGcgaWQ9IldvcmRtYXJrIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05MzguNDYsMTUwLjU0YzI0LjUyLDAsNDcuNzQsMTUsNTIuNjQsNDcuNDFIODgxLjljNC41Ny0yOC40NCwyNS44My00Ny40MSw1Ni41Ni00Ny40MW00OS4xNSw5NS4zNmMtOC4zNCwxMy0yNC40NiwyMy00Ni41MywyMy0zMC40MSwwLTUzLjYzLTE2LjY3LTU5LjE4LTQ2LjFoMTM3YTgzLDgzLDAsMCwwLDEtMTIuNzVjMC00NS43Ny0zMi04Ni4zMi04MS40Mi04Ni4zMi01MSwwLTg1LjY2LDM3LjYtODUuNjYsODYsMCw0OSwzNSw4Niw4Ny42Miw4NiwzMi43LDAsNTcuNTUtMTQuNzIsNzEuOTMtMzdaIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI4MTAuOTIiIHk9IjUyLjc4IiB3aWR0aD0iMjguNDQiIGhlaWdodD0iMjM4LjY5Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTE3OC4xNSwxOTEuMDlWMjkxLjQ2SDExNDkuN1YxOTIuNzJjMC0yNi44MS0xNS4zNi00MS44NS00MC41NC00MS44NS0yNi4xNiwwLTQ3LjQxLDE1LjM3LTQ3LjQxLDUzLjk1djg2LjY0SDEwMzMuM1YxMjhoMjguNDV2MjMuNTRjMTIuMS0xOS4yOSwzMC4wOC0yNy43OSw1My0yNy43OSwzOC4yNSwwLDYzLjQzLDI1LjUsNjMuNDMsNjcuMzYiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMzM1LDIwOS43MmMwLTMzLjM1LTI1LjE4LTU4LjUzLTU4LjItNTguNTMtMzIuNywwLTU3Ljg3LDI1LjE4LTU3Ljg3LDU4LjUzczI1LjE3LDU4LjUzLDU3Ljg3LDU4LjUzYzMzLDAsNTguMi0yNS4xOCw1OC4yLTU4LjUzbTI4LjQ0LTE1Ni45NFYyOTEuNDdIMTMzNVYyNjMuMzRjLTEzLjA4LDIwLTM0LDMyLjM4LTYxLjgsMzIuMzgtNDUuNDUsMC04Mi43Mi0zNy42MS04Mi43Mi04NnMzNy4yNy04Niw4Mi43Mi04NmMyNy43OSwwLDQ4LjcyLDEyLjQyLDYxLjgsMzIuMzdWNTIuNzhaIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxMzg2LjM4IiB5PSI1Mi43OCIgd2lkdGg9IjI4LjQ0IiBoZWlnaHQ9IjIzOC42OSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTc2MC4yMiwyMDkuNzJjMC0zMy4zNS0yNS4xNy01OC41My01OC4yLTU4LjUzLTMyLjY5LDAtNTcuODcsMjUuMTgtNTcuODcsNTguNTNzMjUuMTgsNTguNTMsNTcuODcsNTguNTNjMzMsMCw1OC4yLTI1LjE4LDU4LjItNTguNTNNNzg4LjY3LDEyOFYyOTEuNDZINzYwLjIyVjI2My4zNGMtMTMuMDgsMjAtMzQsMzIuMzgtNjEuNzksMzIuMzgtNDUuNDUsMC04Mi43My0zNy42MS04Mi43My04NnMzNy4yOC04Niw4Mi43My04NmMyNy43OSwwLDQ4LjcxLDEyLjQyLDYxLjc5LDMyLjM3VjEyOFoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01NzMuNTEsMjYwYTg4LjUzLDg4LjUzLDAsMSwxLDI1LjYtMTUxLjQyLDg3LDg3LDAsMCwxLDEzLjQ4LDEzLjkybDI0LjYxLTE4YTExOS4xNywxMTkuMTcsMCwxLDAtMjEuNzIsMTY2LjY1TDU5OS4xLDI0NS4yNUE4OS4zMiw4OS4zMiwwLDAsMSw1NzMuNTEsMjYwIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTU1Mi4xMiwxMjh2OTIuNzhjMCwzMC0xNy40NSw0OS00NC4wOSw0OXMtNDUuOTMtMTktNDUuOTMtNDlWMTI4aC0yOC43OHY5MGMwLDQ3LjE2LDI5LjM5LDc3Ljc4LDc0LjcxLDc3Ljc4LDM5LjIsMCw0NS4zMi0yNC44LDQ1LjMyLTI1LjQydjMzLjM4YzAsMzMuMDctMTQuMzksNTEuNzUtNDQuNCw1MS43NWE0NC4xOSw0NC4xOSwwLDAsMS00NC0zOC4ybC0yNS43Myw5QTcxLjUzLDcxLjUzLDAsMCwwLDE1MDksMzgxLjUyYzQ2LjU0LDAsNzItMzAuNjMsNzItNzcuNzhWMTI4WiIvPjwvZz48ZyBpZD0iQnJhbmRfbWFyayIgZGF0YS1uYW1lPSJCcmFuZCBtYXJrIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yMzEuNTgsMjIzLjIzQzIyMC42NSwyMzIuOTMsMjA3LDI0NSwxODIuMjUsMjQ1aC0xNC44Yy0xNy45MSwwLTM0LjItNi41MS00NS44Ni0xOC4zMS0xMS4zOS0xMS41My0xNy42Ni0yNy4zMS0xNy42Ni00NC40NFYxNjJjMC0xNy4xMyw2LjI3LTMyLjkxLDE3LjY2LTQ0LjQ0LDExLjY2LTExLjgsMjcuOTUtMTguMyw0NS44Ni0xOC4zaDE0LjhjMjQuNzgsMCwzOC40LDEyLjA2LDQ5LjMzLDIxLjc2LDExLjM1LDEwLDIxLjE0LDE4Ljc0LDQ3LjI1LDE4Ljc0YTc1LjExLDc1LjExLDAsMCwwLDExLjg5LS45NWwtLjA5LS4yM2E4OS41Myw4OS41MywwLDAsMC01LjQ5LTExLjI4TDI2Ny42OSw5Ny4wN2E4OS42NSw4OS42NSwwLDAsMC03Ny42NC00NC44MkgxNTUuMTRBODkuNjUsODkuNjUsMCwwLDAsNzcuNSw5Ny4wN0w2MC4wNSwxMjcuM2E4OS42Nyw4OS42NywwLDAsMCwwLDg5LjY1TDc3LjUsMjQ3LjE4QTg5LjY1LDg5LjY1LDAsMCwwLDE1NS4xNCwyOTJoMzQuOTFhODkuNjUsODkuNjUsMCwwLDAsNzcuNjQtNDQuODJMMjg1LjE0LDIxN2E4OS41Myw4OS41MywwLDAsMCw1LjQ5LTExLjI4bC4wOS0uMjJhNzQsNzQsMCwwLDAtMTEuODktMWMtMjYuMTEsMC0zNS45LDguNjktNDcuMjUsMTguNzQiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xODIuMjUsMTE3LjYxaC0xNC44Yy0yNy4yNiwwLTQ1LjE3LDE5LjQ3LTQ1LjE3LDQ0LjM5djIwLjI1YzAsMjQuOTIsMTcuOTEsNDQuMzksNDUuMTcsNDQuMzloMTQuOGMzOS43MiwwLDM2LjYtNDAuNSw5Ni41OC00MC41YTkxLjY0LDkxLjY0LDAsMCwxLDE2Ljk0LDEuNTYsODkuNTQsODkuNTQsMCwwLDAsMC0zMS4xNSw5Mi41MSw5Mi41MSwwLDAsMS0xNi45NCwxLjU2Yy02MCwwLTU2Ljg2LTQwLjUtOTYuNTgtNDAuNSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMzMC4yMywyMDIuNWE4My42Miw4My42MiwwLDAsMC0zNC40NS0xNC44MWMwLC4xMSwwLC4yLDAsLjNhODkuNyw4OS43LDAsMCwxLTUsMTcuNDUsNjUuNTgsNjUuNTgsMCwwLDEsMjguNDgsMTEuNzNjMCwuMDgtLjA1LjE4LS4wOC4yN2ExNTMuNTcsMTUzLjU3LDAsMSwxLDAtOTAuNjNjMCwuMDkuMDUuMTkuMDguMjdhNjUuNDUsNjUuNDUsMCwwLDEtMjguNDgsMTEuNzIsOTAuMyw5MC4zLDAsMCwxLDUsMTcuNDcsMi4zMywyLjMzLDAsMCwwLDAsLjI4LDgzLjYsODMuNiwwLDAsMCwzNC40NS0xNC44YzkuODItNy4yNyw3LjkyLTE1LjQ4LDYuNDMtMjAuMzRhMTcyLjEzLDE3Mi4xMywwLDEsMCwwLDEwMS40M2MxLjQ5LTQuODYsMy4zOS0xMy4wNy02LjQzLTIwLjM0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjkwLjcyLDEzOC44YTc0LDc0LDAsMCwxLTExLjg5LDFjLTI2LjExLDAtMzUuOS04LjY5LTQ3LjI0LTE4Ljc0LTEwLjk0LTkuNy0yNC41Ni0yMS43Ny00OS4zNC0yMS43N2gtMTQuOGMtMTcuOTIsMC0zNC4yLDYuNTEtNDUuODYsMTguMzEtMTEuMzksMTEuNTMtMTcuNjYsMjcuMzEtMTcuNjYsNDQuNDR2MjAuMjVjMCwxNy4xMyw2LjI3LDMyLjkxLDE3LjY2LDQ0LjQ0LDExLjY2LDExLjgsMjcuOTQsMTguMyw0NS44NiwxOC4zaDE0LjhjMjQuNzgsMCwzOC40LTEyLjA2LDQ5LjM0LTIxLjc2LDExLjM0LTEwLDIxLjEzLTE4Ljc0LDQ3LjI0LTE4Ljc0YTc1LjExLDc1LjExLDAsMCwxLDExLjg5Ljk1LDg5LDg5LDAsMCwwLDUtMTcuNDUsMi42OCwyLjY4LDAsMCwwLDAtLjMsOTIuNTEsOTIuNTEsMCwwLDAtMTYuOTQtMS41NWMtNjAsMC01Ni44Niw0MC41MS05Ni41OCw0MC41MWgtMTQuOGMtMjcuMjYsMC00NS4xNy0xOS40OC00NS4xNy00NC40VjE2MmMwLTI0LjkyLDE3LjkxLTQ0LjM5LDQ1LjE3LTQ0LjM5aDE0LjhjMzkuNzIsMCwzNi42LDQwLjQ5LDk2LjU4LDQwLjQ5YTkxLjY0LDkxLjY0LDAsMCwwLDE2Ljk0LTEuNTVjMC0uMDksMC0uMTgsMC0uMjhhOTAuMyw5MC4zLDAsMCwwLTUtMTcuNDciLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yOTAuNzIsMTM4LjhhNzQsNzQsMCwwLDEtMTEuODksMWMtMjYuMTEsMC0zNS45LTguNjktNDcuMjQtMTguNzQtMTAuOTQtOS43LTI0LjU2LTIxLjc3LTQ5LjM0LTIxLjc3aC0xNC44Yy0xNy45MiwwLTM0LjIsNi41MS00NS44NiwxOC4zMS0xMS4zOSwxMS41My0xNy42NiwyNy4zMS0xNy42Niw0NC40NHYyMC4yNWMwLDE3LjEzLDYuMjcsMzIuOTEsMTcuNjYsNDQuNDQsMTEuNjYsMTEuOCwyNy45NCwxOC4zLDQ1Ljg2LDE4LjNoMTQuOGMyNC43OCwwLDM4LjQtMTIuMDYsNDkuMzQtMjEuNzYsMTEuMzQtMTAsMjEuMTMtMTguNzQsNDcuMjQtMTguNzRhNzUuMTEsNzUuMTEsMCwwLDEsMTEuODkuOTUsODksODksMCwwLDAsNS0xNy40NSwyLjY4LDIuNjgsMCwwLDAsMC0uMyw5Mi41MSw5Mi41MSwwLDAsMC0xNi45NC0xLjU1Yy02MCwwLTU2Ljg2LDQwLjUxLTk2LjU4LDQwLjUxaC0xNC44Yy0yNy4yNiwwLTQ1LjE3LTE5LjQ4LTQ1LjE3LTQ0LjRWMTYyYzAtMjQuOTIsMTcuOTEtNDQuMzksNDUuMTctNDQuMzloMTQuOGMzOS43MiwwLDM2LjYsNDAuNDksOTYuNTgsNDAuNDlhOTEuNjQsOTEuNjQsMCwwLDAsMTYuOTQtMS41NWMwLS4wOSwwLS4xOCwwLS4yOGE5MC4zLDkwLjMsMCwwLDAtNS0xNy40NyIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="  height="40px" width="auto" alt="Calendly logo" class="sc-xcu1of-0 fAEWHY">
-         </div>
-         <div id="mid">
-             <ul>
-                 <li><a href="#">Individuals</a></li>
-             <li><a href="#">Teams</a></li>
-             <li><a href="#">Enterprise</a></li>
-             
-             
-                 <li>
-                     <a href="#">Product</a>
-                     
-                 </li>
-                 <li><a href="#">Pricing</a></li>
-                 <li><a href="#">Resources</a></li>
-             </ul>
-         </div>
-         <div id="signup">
-             <button>Get started</button>
-         </div>
-         </div>
+                  <a href="index.html"><img
+                              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTgwLjkxIDM4MS41MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiMwMDZiZmY7fS5jbHMtMntmaWxsOiMwYWU4ZjA7fTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PGcgaWQ9IldvcmRtYXJrIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05MzguNDYsMTUwLjU0YzI0LjUyLDAsNDcuNzQsMTUsNTIuNjQsNDcuNDFIODgxLjljNC41Ny0yOC40NCwyNS44My00Ny40MSw1Ni41Ni00Ny40MW00OS4xNSw5NS4zNmMtOC4zNCwxMy0yNC40NiwyMy00Ni41MywyMy0zMC40MSwwLTUzLjYzLTE2LjY3LTU5LjE4LTQ2LjFoMTM3YTgzLDgzLDAsMCwwLDEtMTIuNzVjMC00NS43Ny0zMi04Ni4zMi04MS40Mi04Ni4zMi01MSwwLTg1LjY2LDM3LjYtODUuNjYsODYsMCw0OSwzNSw4Niw4Ny42Miw4NiwzMi43LDAsNTcuNTUtMTQuNzIsNzEuOTMtMzdaIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI4MTAuOTIiIHk9IjUyLjc4IiB3aWR0aD0iMjguNDQiIGhlaWdodD0iMjM4LjY5Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTE3OC4xNSwxOTEuMDlWMjkxLjQ2SDExNDkuN1YxOTIuNzJjMC0yNi44MS0xNS4zNi00MS44NS00MC41NC00MS44NS0yNi4xNiwwLTQ3LjQxLDE1LjM3LTQ3LjQxLDUzLjk1djg2LjY0SDEwMzMuM1YxMjhoMjguNDV2MjMuNTRjMTIuMS0xOS4yOSwzMC4wOC0yNy43OSw1My0yNy43OSwzOC4yNSwwLDYzLjQzLDI1LjUsNjMuNDMsNjcuMzYiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMzM1LDIwOS43MmMwLTMzLjM1LTI1LjE4LTU4LjUzLTU4LjItNTguNTMtMzIuNywwLTU3Ljg3LDI1LjE4LTU3Ljg3LDU4LjUzczI1LjE3LDU4LjUzLDU3Ljg3LDU4LjUzYzMzLDAsNTguMi0yNS4xOCw1OC4yLTU4LjUzbTI4LjQ0LTE1Ni45NFYyOTEuNDdIMTMzNVYyNjMuMzRjLTEzLjA4LDIwLTM0LDMyLjM4LTYxLjgsMzIuMzgtNDUuNDUsMC04Mi43Mi0zNy42MS04Mi43Mi04NnMzNy4yNy04Niw4Mi43Mi04NmMyNy43OSwwLDQ4LjcyLDEyLjQyLDYxLjgsMzIuMzdWNTIuNzhaIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxMzg2LjM4IiB5PSI1Mi43OCIgd2lkdGg9IjI4LjQ0IiBoZWlnaHQ9IjIzOC42OSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTc2MC4yMiwyMDkuNzJjMC0zMy4zNS0yNS4xNy01OC41My01OC4yLTU4LjUzLTMyLjY5LDAtNTcuODcsMjUuMTgtNTcuODcsNTguNTNzMjUuMTgsNTguNTMsNTcuODcsNTguNTNjMzMsMCw1OC4yLTI1LjE4LDU4LjItNTguNTNNNzg4LjY3LDEyOFYyOTEuNDZINzYwLjIyVjI2My4zNGMtMTMuMDgsMjAtMzQsMzIuMzgtNjEuNzksMzIuMzgtNDUuNDUsMC04Mi43My0zNy42MS04Mi43My04NnMzNy4yOC04Niw4Mi43My04NmMyNy43OSwwLDQ4LjcxLDEyLjQyLDYxLjc5LDMyLjM3VjEyOFoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01NzMuNTEsMjYwYTg4LjUzLDg4LjUzLDAsMSwxLDI1LjYtMTUxLjQyLDg3LDg3LDAsMCwxLDEzLjQ4LDEzLjkybDI0LjYxLTE4YTExOS4xNywxMTkuMTcsMCwxLDAtMjEuNzIsMTY2LjY1TDU5OS4xLDI0NS4yNUE4OS4zMiw4OS4zMiwwLDAsMSw1NzMuNTEsMjYwIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTU1Mi4xMiwxMjh2OTIuNzhjMCwzMC0xNy40NSw0OS00NC4wOSw0OXMtNDUuOTMtMTktNDUuOTMtNDlWMTI4aC0yOC43OHY5MGMwLDQ3LjE2LDI5LjM5LDc3Ljc4LDc0LjcxLDc3Ljc4LDM5LjIsMCw0NS4zMi0yNC44LDQ1LjMyLTI1LjQydjMzLjM4YzAsMzMuMDctMTQuMzksNTEuNzUtNDQuNCw1MS43NWE0NC4xOSw0NC4xOSwwLDAsMS00NC0zOC4ybC0yNS43Myw5QTcxLjUzLDcxLjUzLDAsMCwwLDE1MDksMzgxLjUyYzQ2LjU0LDAsNzItMzAuNjMsNzItNzcuNzhWMTI4WiIvPjwvZz48ZyBpZD0iQnJhbmRfbWFyayIgZGF0YS1uYW1lPSJCcmFuZCBtYXJrIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yMzEuNTgsMjIzLjIzQzIyMC42NSwyMzIuOTMsMjA3LDI0NSwxODIuMjUsMjQ1aC0xNC44Yy0xNy45MSwwLTM0LjItNi41MS00NS44Ni0xOC4zMS0xMS4zOS0xMS41My0xNy42Ni0yNy4zMS0xNy42Ni00NC40NFYxNjJjMC0xNy4xMyw2LjI3LTMyLjkxLDE3LjY2LTQ0LjQ0LDExLjY2LTExLjgsMjcuOTUtMTguMyw0NS44Ni0xOC4zaDE0LjhjMjQuNzgsMCwzOC40LDEyLjA2LDQ5LjMzLDIxLjc2LDExLjM1LDEwLDIxLjE0LDE4Ljc0LDQ3LjI1LDE4Ljc0YTc1LjExLDc1LjExLDAsMCwwLDExLjg5LS45NWwtLjA5LS4yM2E4OS41Myw4OS41MywwLDAsMC01LjQ5LTExLjI4TDI2Ny42OSw5Ny4wN2E4OS42NSw4OS42NSwwLDAsMC03Ny42NC00NC44MkgxNTUuMTRBODkuNjUsODkuNjUsMCwwLDAsNzcuNSw5Ny4wN0w2MC4wNSwxMjcuM2E4OS42Nyw4OS42NywwLDAsMCwwLDg5LjY1TDc3LjUsMjQ3LjE4QTg5LjY1LDg5LjY1LDAsMCwwLDE1NS4xNCwyOTJoMzQuOTFhODkuNjUsODkuNjUsMCwwLDAsNzcuNjQtNDQuODJMMjg1LjE0LDIxN2E4OS41Myw4OS41MywwLDAsMCw1LjQ5LTExLjI4bC4wOS0uMjJhNzQsNzQsMCwwLDAtMTEuODktMWMtMjYuMTEsMC0zNS45LDguNjktNDcuMjUsMTguNzQiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xODIuMjUsMTE3LjYxaC0xNC44Yy0yNy4yNiwwLTQ1LjE3LDE5LjQ3LTQ1LjE3LDQ0LjM5djIwLjI1YzAsMjQuOTIsMTcuOTEsNDQuMzksNDUuMTcsNDQuMzloMTQuOGMzOS43MiwwLDM2LjYtNDAuNSw5Ni41OC00MC41YTkxLjY0LDkxLjY0LDAsMCwxLDE2Ljk0LDEuNTYsODkuNTQsODkuNTQsMCwwLDAsMC0zMS4xNSw5Mi41MSw5Mi41MSwwLDAsMS0xNi45NCwxLjU2Yy02MCwwLTU2Ljg2LTQwLjUtOTYuNTgtNDAuNSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMzMC4yMywyMDIuNWE4My42Miw4My42MiwwLDAsMC0zNC40NS0xNC44MWMwLC4xMSwwLC4yLDAsLjNhODkuNyw4OS43LDAsMCwxLTUsMTcuNDUsNjUuNTgsNjUuNTgsMCwwLDEsMjguNDgsMTEuNzNjMCwuMDgtLjA1LjE4LS4wOC4yN2ExNTMuNTcsMTUzLjU3LDAsMSwxLDAtOTAuNjNjMCwuMDkuMDUuMTkuMDguMjdhNjUuNDUsNjUuNDUsMCwwLDEtMjguNDgsMTEuNzIsOTAuMyw5MC4zLDAsMCwxLDUsMTcuNDcsMi4zMywyLjMzLDAsMCwwLDAsLjI4LDgzLjYsODMuNiwwLDAsMCwzNC40NS0xNC44YzkuODItNy4yNyw3LjkyLTE1LjQ4LDYuNDMtMjAuMzRhMTcyLjEzLDE3Mi4xMywwLDEsMCwwLDEwMS40M2MxLjQ5LTQuODYsMy4zOS0xMy4wNy02LjQzLTIwLjM0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjkwLjcyLDEzOC44YTc0LDc0LDAsMCwxLTExLjg5LDFjLTI2LjExLDAtMzUuOS04LjY5LTQ3LjI0LTE4Ljc0LTEwLjk0LTkuNy0yNC41Ni0yMS43Ny00OS4zNC0yMS43N2gtMTQuOGMtMTcuOTIsMC0zNC4yLDYuNTEtNDUuODYsMTguMzEtMTEuMzksMTEuNTMtMTcuNjYsMjcuMzEtMTcuNjYsNDQuNDR2MjAuMjVjMCwxNy4xMyw2LjI3LDMyLjkxLDE3LjY2LDQ0LjQ0LDExLjY2LDExLjgsMjcuOTQsMTguMyw0NS44NiwxOC4zaDE0LjhjMjQuNzgsMCwzOC40LTEyLjA2LDQ5LjM0LTIxLjc2LDExLjM0LTEwLDIxLjEzLTE4Ljc0LDQ3LjI0LTE4Ljc0YTc1LjExLDc1LjExLDAsMCwxLDExLjg5Ljk1LDg5LDg5LDAsMCwwLDUtMTcuNDUsMi42OCwyLjY4LDAsMCwwLDAtLjMsOTIuNTEsOTIuNTEsMCwwLDAtMTYuOTQtMS41NWMtNjAsMC01Ni44Niw0MC41MS05Ni41OCw0MC41MWgtMTQuOGMtMjcuMjYsMC00NS4xNy0xOS40OC00NS4xNy00NC40VjE2MmMwLTI0LjkyLDE3LjkxLTQ0LjM5LDQ1LjE3LTQ0LjM5aDE0LjhjMzkuNzIsMCwzNi42LDQwLjQ5LDk2LjU4LDQwLjQ5YTkxLjY0LDkxLjY0LDAsMCwwLDE2Ljk0LTEuNTVjMC0uMDksMC0uMTgsMC0uMjhhOTAuMyw5MC4zLDAsMCwwLTUtMTcuNDciLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yOTAuNzIsMTM4LjhhNzQsNzQsMCwwLDEtMTEuODksMWMtMjYuMTEsMC0zNS45LTguNjktNDcuMjQtMTguNzQtMTAuOTQtOS43LTI0LjU2LTIxLjc3LTQ5LjM0LTIxLjc3aC0xNC44Yy0xNy45MiwwLTM0LjIsNi41MS00NS44NiwxOC4zMS0xMS4zOSwxMS41My0xNy42NiwyNy4zMS0xNy42Niw0NC40NHYyMC4yNWMwLDE3LjEzLDYuMjcsMzIuOTEsMTcuNjYsNDQuNDQsMTEuNjYsMTEuOCwyNy45NCwxOC4zLDQ1Ljg2LDE4LjNoMTQuOGMyNC43OCwwLDM4LjQtMTIuMDYsNDkuMzQtMjEuNzYsMTEuMzQtMTAsMjEuMTMtMTguNzQsNDcuMjQtMTguNzRhNzUuMTEsNzUuMTEsMCwwLDEsMTEuODkuOTUsODksODksMCwwLDAsNS0xNy40NSwyLjY4LDIuNjgsMCwwLDAsMC0uMyw5Mi41MSw5Mi41MSwwLDAsMC0xNi45NC0xLjU1Yy02MCwwLTU2Ljg2LDQwLjUxLTk2LjU4LDQwLjUxaC0xNC44Yy0yNy4yNiwwLTQ1LjE3LTE5LjQ4LTQ1LjE3LTQ0LjRWMTYyYzAtMjQuOTIsMTcuOTEtNDQuMzksNDUuMTctNDQuMzloMTQuOGMzOS43MiwwLDM2LjYsNDAuNDksOTYuNTgsNDAuNDlhOTEuNjQsOTEuNjQsMCwwLDAsMTYuOTQtMS41NWMwLS4wOSwwLS4xOCwwLS4yOGE5MC4zLDkwLjMsMCwwLDAtNS0xNy40NyIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="
+                              height="40px" width="auto" alt="Calendly logo" class="sc-xcu1of-0 fAEWHY"></a>
+            </div>
+            <div id="mid">
+                  <ul>
+                        <li><a href="#">Individuals</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Enterprise</a></li>
+
+
+                        <li>
+                              <a href="#">Product</a>
+
+                        </li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Resources</a></li>
+                  </ul>
+            </div>
+            <div style="margin-right:-10% ;" id="signup">
+                  <a href="dashboard.html"><button id="button11">Get started</button></a>
+            </div>
+      </div>
       <div id="bigdiv">
-            <div id="big1"><p id="calend">CALENDLY FOR TEAMS</p>
-            <h1><span id="smart">Smarter scheduling for teams</span></h1>
-            <p id="whether">Whether your team’s performance is 
-            measured by sales revenue, recruiting pipeline, 
-            or customer retention, scheduling automation 
-            enables your team to hit goals faster.</p>
-            <button id="startbtn1">Start for free</button>
-            <button id="startbtn2">Contact sales</button>
-            
+            <div id="big1">
+                  <p id="calend">CALENDLY FOR TEAMS</p>
+                  <h1><span id="smart">Smarter scheduling for teams</span></h1>
+                  <p id="whether">Whether your team’s performance is
+                        measured by sales revenue, recruiting pipeline,
+                        or customer retention, scheduling automation
+                        enables your team to hit goals faster.</p>
+                  <button id="startbtn1">Start for free</button>
+                  <button id="startbtn2">Contact sales</button>
+
             </div>
             <div id="big2">
-                  <img id="backimg" src="back.png
+                  <img id="backimg" src="https://images.ctfassets.net/k0lk9kiuza3o/3YIhgib2rKRXYTHA9ZxSYN/15ff54601eafef635f098108e450cd86/Teams_Hero_Image_Small.png?w=1375&h=1115&q=50&fm=webp
                   " alt="">
             </div>
       </div>
+     
+
       <div id="bigdiv" style="margin-top:7%;">
-            <div id="big1"><p id="calend">SPEED OF CONNECTION</p>
-            <h1><span style="font-size: 35px;color: rgb(20, 20, 57);">Outperform the competition with 
-            faster connections</span></h1>
-            <p id="whether">You can’t waste time when prospects, 
-            clients, and candidates express interest. Avoid missed 
-            opportunities by automatically qualifying and routing 
-            website visitors to specific team members. 
-            You can also pool scheduling availability together to 
-            offer more options to connect.</p>
-            
+            <div id="big1">
+                  <p id="calend">SPEED OF CONNECTION</p>
+                  <h1><span style="font-size: 35px;color: #002142;">Outperform the competition with
+                              faster connections</span></h1>
+                  <p id="whether">You can’t waste time when prospects,
+                        clients, and candidates express interest. Avoid missed
+                        opportunities by automatically qualifying and routing
+                        website visitors to specific team members.
+                        You can also pool scheduling availability together to
+                        offer more options to connect.</p>
+
             </div>
             <div id="big2">
                   <img id="backimg" src="https://images.ctfassets.net/k0lk9kiuza3o/zLDG89VPUNmWTS6SXf3W4/31f28cdea9417112d43e2270f554c289/Calendly-Availability-In-A-Click.png?w=1180&h=1107&q=50&fm=webp
@@ -149,24 +223,28 @@
                   <img id="backimg" src="https://images.ctfassets.net/k0lk9kiuza3o/6rrSFLQXzyJUdnnnrAbhpb/16ec1ec41c24edc00ad2ac3d71148a0c/Calendly-Teams-Workflows.png?w=1140&h=924&q=50&fm=webp
                   " alt="">
             </div>
-            <div id="big1"><p id="calend">TIME MANAGEMENT</p>
-            <h1><span style="font-size:35px;color: rgb(20, 20, 57);">Automate scheduling, improve team performance</span></h1>
-            <p id="whether">Scheduling automation eliminates time-consuming 
-            admin tasks so your team can focus on higher priorities. 
-            With actionable insights into your team’s scheduling activities 
-            and integrations with your team’s favorite tools, you can identify 
-            potential process improvements and empower your team to work more 
-            efficiently.</p></div>
+            <div id="big1">
+                  <p id="calend">TIME MANAGEMENT</p>
+                  <h1><span style="font-size:35px;color:#002142;">Automate scheduling, improve team performance</span>
+                  </h1>
+                  <p id="whether">Scheduling automation eliminates time-consuming
+                        admin tasks so your team can focus on higher priorities.
+                        With actionable insights into your team’s scheduling activities
+                        and integrations with your team’s favorite tools, you can identify
+                        potential process improvements and empower your team to work more
+                        efficiently.</p>
+            </div>
       </div>
       <div id="bigdiv" style="margin-top:7%;">
-            <div id="big1"><p id="calend">TEAM STANDARDIZATION</p>
-            <h1><span style="font-size:35px;color: rgb(20, 20, 57);">Improve the customer experience with 
-            consistent scheduling</span></h1>
-            <p id="whether">Managed Events let you assign and lock Event 
-            Type details — such as meeting descriptions, invitee questions, 
-            and notifications — so your team delivers a reliable and professional
-            experience every time.</p>
-            
+            <div id="big1">
+                  <p id="calend">TEAM STANDARDIZATION</p>
+                  <h1><span style="font-size:35px;color: #002142;">Improve the customer experience with
+                              consistent scheduling</span></h1>
+                  <p id="whether">Managed Events let you assign and lock Event
+                        Type details — such as meeting descriptions, invitee questions,
+                        and notifications — so your team delivers a reliable and professional
+                        experience every time.</p>
+
             </div>
             <div id="big2">
                   <img id="backimg" src="https://images.ctfassets.net/k0lk9kiuza3o/5LpXPs1wysp0sZGCKQK9oP/fa504413d146109e89647faadb2ab20d/Group_28529.png?w=1352&h=826&q=50&fm=webp
@@ -178,163 +256,499 @@
                   <img id="backimg" src="https://images.ctfassets.net/k0lk9kiuza3o/wyOsTDMiF1GBZ0HYBEwCX/8f1181d4039431b7873443c8166cf543/Calendly-Automation-Streamline.png?w=1164&h=932&q=50&fm=webp
                   " alt="">
             </div>
-            <div id="big1"><p id="calend">CONSISTENCY IN EXECUTION</p>
-            <h1><span style="font-size:35px;color: rgb(20, 20, 57);">Streamline communications across the 
-            meeting lifecycle</span></h1>
-            <p id="whether">From pre-call email questionnaires and confirmation 
-            texts to post-call follow-up links, meeting best practices can be 
-            automatically applied across your team. These templates and 
-            workflows increase engagement and ensure consistent, professional 
-            communications with your customers and candidates.</p>
-            
+            <div id="big1">
+                  <p id="calend">CONSISTENCY IN EXECUTION</p>
+                  <h1><span style="font-size:35px;color: #002142;">Streamline communications across the
+                              meeting lifecycle</span></h1>
+                  <p id="whether">From pre-call email questionnaires and confirmation
+                        texts to post-call follow-up links, meeting best practices can be
+                        automatically applied across your team. These templates and
+                        workflows increase engagement and ensure consistent, professional
+                        communications with your customers and candidates.</p>
+
             </div>
-            
+
       </div>
-<center>
-      <h3 id="calend" style="margin-top:100px;">FEATURES</h3>
-      <h1 style="font-size:35px;color: rgb(20, 20, 57);margin-bottom: 5%; ">
-      Favorite Team Features</h1>
-      <div id="adiv">
-            <a id="atag" href="#">Team Scheduling Pages</a>
-            <a id="atag" href="#">Automated Workflows</a>
-            <a id="atag" href="#">Round Robin Events</a>
-            <a id="atag" href="#">Salesforce Integration</a>
-      <style>
-            #atag{
-                  margin-top: 100px;
-                  font-size: 25px;
-                  margin-right: 1%;
-                  text-decoration:none;
-            }
-            #atag:hover{
-                /* color: green;  */
-                  text-decoration: underline green;
-            }
-      </style>
-      </div>
-</center>
+      <center>
+            <h3 id="calend" style="margin-top:100px;">FEATURES</h3>
+            <h1 style="font-size:50px;color: #002142;
+      margin-bottom: 5%; font-weight:800; ">
+                  Favorite Team Features</h1>
+            <div id="adiv">
+                  <a id="atag" href="#">Team Scheduling Pages</a>
+                  <a id="atag" href="#">Automated Workflows</a>
+                  <a id="atag" href="#">Round Robin Events</a>
+                  <a id="atag" href="#">Salesforce Integration</a>
+                  <style>
+                        #atag {
+                              margin-top: 100px;
+                              font-size: 25px;
+                              margin-right: 1%;
+                              text-decoration: none;
+                              color: #002142;
+                        }
+
+                        #atag:hover {
+                              /* color: green;  */
+                              text-decoration: underline green;
+                        }
+                  </style>
+            </div>
+      </center>
+
+
+
       <div id="bigdiv" style="margin-top:7%;">
             <div id="big1">
                   <!-- <p id="calend">TIME MANAGEMENT</p> -->
-            <h1><span style="font-size:35px;color: rgb(20, 20, 57);">
-                  Team Scheduling Pages</span></h1>
-            <p id="whether">Create a personalized scheduling page for a team 
-            instead of individual booking pages. Invitees with the link can 
-            access and choose from meeting types based on their needs.</p>
-            <a id="atag" href="#">Learn More > </a>
+                  <h1><span style="font-size:35px;color: #002142;">
+                              Team Scheduling Pages</span></h1>
+                  <p id="whether">Create a personalized scheduling page for a team
+                        instead of individual booking pages. Invitees with the link can
+                        access and choose from meeting types based on their needs.</p>
+                  <a id="atag" href="#">Learn More > </a>
             </div>
             <div id="big2">
                   <img id="backimg" src="https://images.ctfassets.net/k0lk9kiuza3o/zLDG89VPUNmWTS6SXf3W4/31f28cdea9417112d43e2270f554c289/Calendly-Availability-In-A-Click.png?w=1180&h=1107&q=50&fm=webp
                   " alt="">
             </div>
       </div>
+      <div id="centerdiv11">
+            <center>
+                  <h1 style="color: white;">Smarter scheduling for teams</h1>
+                  <h3 style="color: white;">Get started on the scheduling automation
+                        platform that enables teams to hit <br> goals faster.</h3>
+                  <button id="startbtn15">Start for free</button>
+                  <button id="startbtn16">Talks with sales</button>
+            </center>
+      </div>
+      <style>
+            #startbtn15 {
+                  border: 0px;
+                  width: 150px;
+                  height: 40px;
+                  border-radius: 15px;
+                  color: aliceblue;
+                  background-color: rgb(62, 62, 254);
+                  font-size: medium;
+                  font-size: 20px;
+            }
 
-      <div id="bigdivdown" style="margin-top:7%;">
-            <div id="temdiv">
+            #startbtn16 {
+                  width: 180px;
+                  height: 40px;
+                  border-radius: 15px;
+                  border: 1px solid white;
+                  color: wheat;
+                  margin-left: 8%;
+                  font-size: 20px;
+                  background-color: #002142;
+                  ;
+            }
+
+            #centerdiv11 {
+
+                  height: 300px;
+                  background-color: #002142;
+                  color: white;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+            }
+
+            #startbtn15:hover,
+            #startbtn16:hover {
+                  transform: scale(1.05);
+            }
+      </style>
+
+      <div id="dibigdivwhite" style="margin-top:7%;">
+            <div id="temdiv11">
                   <h4 id="calend">RECOMMENDED FOR TEAMS</h4>
-                  <h1><span>
-                        Pricing Plans</span></h1>
-                        <p>With scheduling hassles and interruptions 
+                  <h1 style="color:#002142; font-weight:800;">
+                        Pricing Plans</h1>
+                  <p>With scheduling hassles and interruptions
                         gone your day is cleared for accomplishment.</p>
 
-                        <a id="atag"  href="#">View All Plans > </a>
+                  <a id="atag" href="#">View All Plans > </a>
             </div>
-            <div id="pladiv">
-                  <h2>TEAMS PLAN</h2>
-                  <p><span id="s16">$16</span>/seat/mo When your team needs to 
-                        align on a scheduling process and collaborate 
+            <div id="pladiv11">
+                  <h2 style="color:#002142;">TEAMS PLAN</h2>
+                  <p><span id="s16">$16</span>/seat/mo When your team needs to
+                        align on a scheduling process and collaborate
                         efficiently.</p>
                   <button id="contbtn1">Try For Free</button>
             </div>
-            <div id="plandiv">
-                  <h4>ENTERPRISE PLAN</h4>
-                  <h1>Contact Us</h1>
-                  <p>When your 30+ member team needs advanced security, 
+            <div id="plandiv11">
+                  <h4 style="color:white ;">ENTERPRISE PLAN</h4>
+                  <h1 style="color:white ;">Contact Us</h1>
+                  <p style="color:white ;">When your 30+ member team needs advanced security,
                         control, and support.</p>
-                        <button id="contbtn">Contact Us</button>
-            
+                  <button id="contbtn">Contact Us</button>
+
             </div>
-            <style>
-                 
-                  #bigdivdown{
-                        /* border: 1px solid red; */
-                        width:1200px;
-                        height: 100%;
-                        display: grid;
-                        grid-template-columns: repeat(3,1fr);
-                        margin: auto;
-                        gap: 5%;
-                  }
-                  #plandiv{
-                        display: grid;
-                        grid-template-columns: repeat(1,1fr);
-                        width:90% ;
-                        height:100% ;
-                        /* border: 1px solid rebeccapurple; */
-                        background-color:rgb(2, 2, 55) ;
-                        color: aliceblue;
-                        padding: 2%;
-                        border-radius: 5%;
-                        font-size: 20px;
-                       
-                       
-                  }
-                  #contbtn{
-                        background-color:rgb(2, 2, 55) ;
-                        padding: 10px;
-                        color: aliceblue;
-                        border: 1px solid wheat;
-                        border-radius: 10px;
-                        font-size: 20px;
-                     
-                         
-                  }
-                  #contbtn1{
-                        margin-top: 50px;
-                        height: 50px;
-                        padding: 10px;
-                        border: 1px solid rgb(6, 149, 99);
-                        border-radius: 10px;
-                        font-size: 20px;
-                                         
-                  }
-                  #temdiv{
-                        display: grid;
-                        grid-template-columns: repeat(1,1fr);
-                        width:85% ;
-                        /* border: 1px solid rebeccapurple; */
-                        height:100% ;
-                        padding: 2%;
-                        border-radius: 5%;
-                        font-size: 20px;
-                  }
-                  #pladiv{
-                        display: grid;
-                        grid-template-columns: repeat(1,1fr);
-                        width:85% ;
-                        /* border: 1px solid rebeccapurple; */
-                        height:100% ;
-                        padding: 2%;
-                        border-radius: 5%;
-                        font-size: 20px;
-                  }
-                  #s16{
-                        color: rgb(2, 2, 55) ;
-                        font-size: 30px;
-                        font-weight: 700;
-                  }
-                 
-            </style>
+
       </div>
+      <style>
+            #dibigdivwhite {
+                  /* border: 1px solid red; */
+                  width: 1200px;
+                  height: 100%;
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  margin: auto;
+                  gap: 5%;
+            }
 
-      <div id="footer"> </div>
+            #plandiv11 {
+                  display: grid;
+                  grid-template-columns: repeat(1, 1fr);
+                  width: 350px;
+                  height: 100%;
+                  border: 1px solid rebeccapurple;
+                  background-color: #002142;
+                  color: aliceblue;
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
 
-      
+
+            }
+
+            #contbtn {
+                  background-color: #002142;
+                  padding: 10px;
+                  color: aliceblue;
+                  border: 1px solid wheat;
+                  border-radius: 10px;
+                  font-size: 20px;
+
+
+            }
+
+            #contbtn1 {
+                  margin-top: 50px;
+                  height: 50px;
+                  padding: 10px;
+                  /* border: 1px solid rgb(6, 149, 99); */
+                  border-radius: 10px;
+                  font-size: 20px;
+
+            }
+
+            #temdiv11 {
+                  display: grid;
+                  grid-template-columns: repeat(1, 1fr);
+                  width: 350px;
+                  /* border: 1px solid rebeccapurple; */
+                  height: 100%;
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
+            }
+
+            #pladiv11 {
+                  display: grid;
+                  grid-template-columns: repeat(1, 1fr);
+                  width: 350px;
+                  /* border: 1px solid rebeccapurple; */
+                  height: 100%;
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
+            }
+
+            #s16 {
+                  color: #002142;
+                  font-size: 30px;
+                  font-weight: 700;
+            }
+      </style>
+
+
+
+
+
 </body>
+
 </html>
-<script type="module">
+<style>
+      /* mediam screens */
 
-      import footer from "./footer.js";
-      document.getElementById("footer").innerHTML=footer();
+      @media all and (min-width: 300px) and (max-width: 800px) {
 
-</script>
+            #bigdiv {
+                  /* border: 1px solid greenyellow; */
+                  width: 900px;
+                  grid-template-columns: repeat(1, 1fr);
+                  gap: 5%;
+                  margin: auto;
+
+            }
+
+            #big1 {
+                  text-align: center;
+                  width: 100%;
+                  /* height: 100%; */
+                  margin: auto;
+                  gap: 10%;
+                  margin: auto;
+            }
+
+            #big2>img {
+
+                  /* border: 1px solid greenyellow; */
+                  width: 100%;
+                  /* height: 100%; */
+                  margin: auto;
+
+            }
+
+            #startbtn1 {
+
+                  /* align-items: center;
+      display: grid;
+      grid-template-columns: repeat(1,1fr); */
+                  width: 150px;
+                  height: 50px;
+                  border-radius: 10%;
+                  margin-top: 3%;
+                  font-size: 17px;
+                  font-weight: 600;
+                  padding: 5px;
+                  border: 0ch;
+                  color: aliceblue;
+                  background-color: rgb(62, 62, 254);
+                  /* margin: auto; */
+            }
+
+            #startbtn2 {
+                  width: 150px;
+                  height: 50px;
+                  border-radius: 10%;
+                  /* border: 1px solid rgb(62, 62, 254); */
+                  color: rgb(62, 62, 254);
+
+                  font-size: 17px;
+                  font-weight: 600;
+                  padding: 5px;
+                  background-color: white;
+                  /* margin: auto; */
+                  margin-top: 3%;
+            }
+
+            #dibigdivwhite {
+                  width: 900px;
+
+                  /* border: 1px solid red; */
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 1%;
+            }
+
+
+            #plandiv11 {
+                  /* display: grid;
+      grid-template-columns: repeat(1, 1fr); */
+                  width: 280px;
+                  height: 100%;
+                  /* border: 1px solid rebeccapurple; */
+                  background-color: #002142;
+                  color: aliceblue;
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
+
+
+            }
+
+            #contbtn {
+                  background-color: #002142;
+                  padding: 10px;
+                  color: aliceblue;
+                  border: 1px solid wheat;
+                  border-radius: 10px;
+                  font-size: 20px;
+
+
+            }
+
+            #contbtn1 {
+                  margin-top: 50px;
+                  height: 50px;
+                  padding: 10px;
+                  /* border: 1px solid rgb(6, 149, 99); */
+                  border-radius: 10px;
+                  font-size: 20px;
+
+            }
+
+            #temdiv11 {
+                  /* display: grid;
+      grid-template-columns: repeat(1, 1fr); */
+                  width: 280px;
+                  /* border: 1px solid rebeccapurple; */
+                  height: 100%;
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
+            }
+
+            #pladiv11 {
+                  /* display: grid;
+      grid-template-columns: repeat(1, 1fr); */
+                  width: 280px;
+                  /* border: 1px solid rebeccapurple; */
+                  height: 100%;
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
+            }
+
+            #s16 {
+                  color: #002142;
+                  font-size: 30px;
+                  font-weight: 700;
+            }
+
+
+
+
+
+      }
+
+      @media all and (min-width: 100px) and (max-width: 401px) {
+
+            #bigdiv {
+                  /* border: 1px solid greenyellow; */
+                  width: 900px;
+                  grid-template-columns: repeat(1, 1fr);
+                  gap: 5%;
+                  margin: auto;
+
+            }
+
+            #big1 {
+                  text-align: center;
+                  width: 100%;
+                  /* height: 100%; */
+                  margin: auto;
+                  gap: 10%;
+                  margin: auto;
+            }
+
+            #big2>img {
+
+                  /* border: 1px solid greenyellow; */
+                  width: 100%;
+                  /* height: 100%; */
+                  margin: auto;
+
+            }
+
+            #startbtn1 {
+
+
+                  width: 150px;
+                  height: 50px;
+                  border-radius: 10%;
+                  margin-top: 3%;
+                  font-size: 17px;
+                  font-weight: 600;
+                  padding: 5px;
+                  border: 0ch;
+                  color: aliceblue;
+                  background-color: rgb(62, 62, 254);
+
+            }
+
+            #startbtn2 {
+                  width: 150px;
+                  height: 50px;
+                  border-radius: 10%;
+                  /* border: 1px solid rgb(62, 62, 254); */
+                  color: rgb(62, 62, 254);
+
+                  font-size: 17px;
+                  font-weight: 600;
+                  padding: 5px;
+                  background-color: white;
+
+                  margin-top: 3%;
+            }
+
+            #dibigdivwhite {
+                  width: 500px;
+                  border: 1px solid red;
+                  display: grid;
+                  grid-template-columns: repeat(1, 1fr);
+                  gap: 1%;
+            }
+
+            #plandiv11 {
+                  /* display: grid;
+grid-template-columns: repeat(1, 1fr); */
+                  width: 280px;
+                  /* height: 100%; */
+                  /* border: 1px solid rebeccapurple; */
+                  background-color: #002142;
+                  color: aliceblue;
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
+
+
+            }
+
+            #contbtn {
+                  background-color: #002142;
+                  padding: 10px;
+                  color: aliceblue;
+                  border: 1px solid wheat;
+                  border-radius: 10px;
+                  font-size: 20px;
+
+
+            }
+
+            #contbtn1 {
+                  margin-top: 50px;
+                  height: 50px;
+                  padding: 10px;
+                  /* border: 1px solid rgb(6, 149, 99); */
+                  border-radius: 10px;
+                  font-size: 20px;
+
+            }
+
+            #temdiv11 {
+                  /* display: grid;
+grid-template-columns: repeat(1, 1fr); */
+                  width: 280px;
+                  /* border: 1px solid rebeccapurple; */
+                  /* height: 100%; */
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
+            }
+
+            #pladiv11 {
+                  /* display: grid;
+grid-template-columns: repeat(1, 1fr); */
+                  width: 280px;
+                  /* border: 1px solid rebeccapurple; */
+                  /* height: 100%; */
+                  padding: 2%;
+                  border-radius: 5%;
+                  font-size: 20px;
+            }
+
+            #s16 {
+                  color: #002142;
+                  font-size: 30px;
+                  font-weight: 700;
+            }
+
+
+      }
+</style>
