@@ -6,25 +6,10 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    
-
+    <link href='https://css.gg/format-justify.css' rel='stylesheet'>
 
 
-    <style>
-        @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
 
-
-        html{
-            scroll-behavior: smooth;
-        }
-        
-        p {
-            color: red;
-            /* font-family: 'Gilroy-Medium', sans-serif;  */
-            font-family: 'Gilroy-Bold', sans-serif;
-        }
-    </style>
 
     <!-- section 1 style part -->
     <style>
@@ -253,12 +238,12 @@
 
         }
 
-        .box{
+        /* .box{
             transition: 0.5s;
-        }
+        } */
 
         .box:hover{
-            transform: translateZ(20px);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
            
         }
         .parent>div>h1{
@@ -302,6 +287,10 @@
             
           
         }
+
+        #card4:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
  
         .parent_one{
             display: flex;
@@ -323,6 +312,10 @@
             transition: transform 1s;
             border-radius: 5px;
 
+        }
+
+        .parent_one>div:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         }
         .parent_one>div>h1{
             
@@ -515,7 +508,7 @@
                 list-style: none;
             }
             .footer{
-                background-color: #24262b;
+                background-color: #fafafa;
                 padding: 70px 0;
             }
             .footer-col{
@@ -524,7 +517,7 @@
             }
             .footer-col h4{
                 font-size: 18px;
-                color: #ffffff;
+                color: #080808;
                 text-transform: capitalize;
                 margin-bottom: 35px;
                 font-weight: 500;
@@ -546,15 +539,15 @@
             .footer-col ul li a{
                 font-size: 16px;
                 text-transform: capitalize;
-                color: #ffffff;
+                color: #000000;
                 text-decoration: none;
                 font-weight: 300;
-                color: #bbbbbb;
+                color: #0a0909;
                 display: block;
                 transition: all 0.3s ease;
             }
             .footer-col ul li a:hover{
-                color: #ffffff;
+                color: #0b0b0b;
                 padding-left: 8px;
             }
             .footer-col .social-links a{
@@ -596,7 +589,7 @@
 </head>
 
 
-  
+
     
     <!-- secction 1 part -->
     <section id="section_1" >
@@ -1399,7 +1392,7 @@
           
            
           
-            <div class="box" data-aos="zoom-out-up">
+            <div id="card4" class="box" data-aos="zoom-out-up">
                 <img data-aos="zoom-out-up" src="https://images.ctfassets.net/k0lk9kiuza3o/2lyAPMRxz8pdvkah5K6NFp/14203e7358e18e312b30c9674d8e72f1/icon-checkmark.svg" alt="">
                 <h1 data-aos="zoom-out-up">Create simple rules</h1>
                 <p data-aos="zoom-out-up">Let Calendly know your availability preferences and it'll do the work for you.</p>
@@ -2364,13 +2357,72 @@
 </body>
 <body>
     
-   
+    <footer class="footer">
+         <div class="container">
+             <div class="row">
+
+                 <div class="footer-col">
+                     <h4>About</h4>
+                     <ul>
+                         <li><a href="#">About Calendly</a></li>
+                         <li><a href="#">Contack Sales</a></li>
+                         <li><a href="#">Newsroom</a></li>
+                         <li><a href="#">Careers</a></li>
+                         <li><a href="#">Security</a></li>
+               
+                     </ul>
+                     
+                 </div>
+                 
+                 <div class="footer-col">
+                    <h4>Solution</h4>
+                    <ul>
+                        <li><a href="#">Costomer Success</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Recruiting</a></li>
+                        <li><a href="#">Information Technology</a></li>
+                        <li><a href="#">Marketing</a></li>
+            
+                    </ul>
+                    
+                </div>
+                 <div class="footer-col">
+                     <h4>Popular Feature
+                     </h4>
+                     <ul>
+                         <li><a href="#">Embed Calendly</a></li>
+                         <li><a href="#">Evailability</a></li>
+                         <li><a href="#">Sending Notification</a></li>
+                         <li><a href="#">Using Calendly Mobile</a></li>
+                         
+                     </ul>
+                 </div>
+                 <div class="footer-col">
+                     <h4>Support and Other</h4>
+                     <ul>
+                         <li><a href="#">Help Center</a></li>
+                         <li><a href="#">Video Tutorials</a></li>
+                         <li><a href="#">Download for crome</a></li>
+                         <li><a href="#">Download for Firefox</a></li>
+                         <li><a href="#">Developer Tools</a></li>
+                     </ul>
+                 </div>
+                 
+             </div>
+         </div>
+    </footer>
   
+  
+  
+          </div>
+  
+          
+      </section> 
   
       
   
   
-  
+  </body>
 </html>
 
 
@@ -2383,6 +2435,103 @@
   });
 </script>
 
+
+<script>
+     
+     document.querySelector("#bt").addEventListener("click",function(){
+        document.querySelector(".popup").style.display="flex"
+    })
+    document.querySelector(".close").addEventListener("click",function(){
+        document.querySelector(".popup").style.display="none"
+        
+    })
+    document.querySelector(".close1").addEventListener("click",function(){
+        
+        document.querySelector(".popup1").style.display="none";
+        window.location.href="navbar.html"
+       
+    })
+   
+    document.querySelector("#gs").addEventListener("click",function(){
+       let email = document.querySelector("#email").value ;
+        if(email==""){
+            document.querySelector("#email").style.border="red 1px solid"
+        }else{
+            localStorage.setItem("calendly_user",email)
+        document.querySelector(".popup").style.display="none"
+        document.querySelector(".popup1").style.display="flex"
+        
+        count=30;
+        function tim(){
+            count--;
+         document.querySelector("#co").innerText=count;
+            if(count==0){
+                clearInterval(id)
+             
+            }
+        }
+        }
+        
+        let id=setInterval(tim,1000)
+
+    })
+  let count;
+ 
+        
+    document.querySelector("#send").addEventListener("click",function(){
+        count=30;
+        function tim(){
+            count--;
+         document.querySelector("#co").innerText=count;
+            if(count==0){
+                clearInterval(id)
+             
+            }
+        }
+        
+        let id=setInterval(tim,1000)
+    })
+    
+       
+    
+    function clickEvent(first,last){
+        if(first.value.length){
+            document.getElementById(last).focus()
+        }
+    }
+    document.querySelector("#gs1").addEventListener("click",function(){
+        let fst=document.getElementById("fst").value ;
+        let sec=document.getElementById("sec").value ;
+        let thr=document.getElementById("thr").value ;
+        let fr=document.getElementById("for").value ;
+        let fiv=document.getElementById("fiv").value ;
+        
+        if(count==0){
+            alert("Time Out Try again")
+        document.getElementById("fst").value=null ;
+        document.getElementById("sec").value=null ;
+        document.getElementById("thr").value=null;
+        document.getElementById("for").value=null;
+        document.getElementById("fiv").value=null;
+       
+        }
+        else if(fst!=1||sec!=2||thr!=3||fr!=4||fiv!=5){
+            alert("Wrong Otp")
+        document.getElementById("fst").value=null ;
+        document.getElementById("sec").value=null ;
+        document.getElementById("thr").value=null;
+        document.getElementById("for").value=null;
+        document.getElementById("fiv").value=null;
+        }
+        
+        
+        else{
+            window.location.href="dashboard.html"
+        }
+        
+    })
+
+</script>
 
 
 
