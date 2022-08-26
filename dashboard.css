@@ -105,7 +105,7 @@ margin-top: -5px;
 #B img:first-child{
 margin-top: -5px;
 }
-#card{
+.card{
     margin-top: 20px;
     width: 83%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -117,25 +117,34 @@ margin-top: -5px;
 
 
 
-#card div{
+.card div{
     display: flex; justify-content: space-between;
 }
 
-#card img{
+.card img{
     width: 20px;
     height: 20px;
 
 }
-#card img:active{
-   width: 22px;
-   height: 22px;
-   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-#card div:last-child>p{
+
+.card div:last-child>p{
     margin-top: 8px;
 }
 
 
+#card{
+    border-top: solid 8px red;
+    transition: 1.5s;
+    color:red;
+   
+    opacity: 0;
+    
+   
+   
+    
+
+    
+}
 
 
 #main{
@@ -153,8 +162,10 @@ font-size: large;
 #duration+p{
     color:rgb(47, 94, 235);
 }
-
-#card button:hover{
+.card button{
+    background-color:rgba(244, 245, 250, 0)
+}
+.card button:hover{
    background-color:  rgba(107, 107, 236, 0.142);;
 }
 
@@ -163,15 +174,18 @@ font-size: large;
 }
 
 
-#card div:last-child{
+.card div:last-child{
     border-top: solid 0.2px rgb(188, 187, 187);
     padding-top: 10px;
     
 }
-#card:hover{
+.card:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     margin-left: -1px;
     margin-bottom: -1px;
+    transition: 0.5s;
+    border-color: rgb(54, 0, 114);
+ background-color: rgb(240, 240, 245);
 
 }
 
@@ -211,10 +225,11 @@ body{
  
 
    }
-   #card{
+   .card{
     width: 80%px;
     margin: auto;
     margin-top: 20px;
+   
    }
 
    #B {

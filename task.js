@@ -5,9 +5,9 @@ function storedata(){
 let eventname=document.getElementById("eventName").value
 let location=document.getElementById("location").value
 let description=document.getElementById("description").value
-let eventlink=document.getElementById("link").value
+let date=document.getElementById("date").value
 let duration=document.getElementById("duration").value
-if( eventname=="" || location==""|| description==""||duration==""){
+if( eventname=="" || location=="none"|| description==""||duration=="none" ||date==""){
     alert("please fill all the fields")
 
    
@@ -18,7 +18,7 @@ else{
         eventname,
         location,
         description,
-        eventlink,
+        date,
         duration
         }
         
@@ -30,7 +30,9 @@ else{
         
         localStorage.setItem("Calendly_Events",JSON.stringify(data))
         
-        window.location.href="dasboard.html"
+    
+        window.location.href="dashboard.html"
+       
 }
 }
 

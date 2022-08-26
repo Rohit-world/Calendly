@@ -6,19 +6,28 @@ function appendData(Calendly_Events) {
   cointainer.innerHTML = null;
   Calendly_Events.forEach((Element,index) => {
     let card = document.createElement("div");
-    card.id = "card"; //main card div
+    card.className= "card"; //main card div
 
     let div1 = document.createElement("div"); //div one for delete btn
 
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
 
+    
     //delete btn and function
     let delbtn = document.createElement("img");
     delbtn.id = "delete-btn";
     delbtn.src = "https://img.icons8.com/metro/344/trash.png";
     delbtn.addEventListener("click", function () {
-      deleteEvent(index);
+      card.id="card"
+      cointainer.className="cont-del"
+
+    const myTimeout = setTimeout(deleteEvent, 1200);
+
+    function myStopFunction() {
+      clearTimeout(deleteEvent(index));
+    }
+      
     });
 
     div1.append(checkbox, delbtn);
@@ -29,7 +38,7 @@ function appendData(Calendly_Events) {
 
     let duration = document.createElement("p");
     duration.id = "duration";
-    duration.innerText = `${Element.duration} One-on-One`;
+    duration.innerText = `${Element.duration} : ${Element.date}`;
 
     let location = document.createElement("p");
     location.innerText = Element.location;
@@ -47,6 +56,29 @@ function appendData(Calendly_Events) {
 
     card.append(div1, eventname, duration, location, div2);
 
+
+
+
+
+    
+//////////////////////////////////////////////////////////////
+    //checked box color property
+
+
+// share.addEventListener('click', function() {
+//   if (share.innerText="Share") {
+//     card.style.borderColor="color:rgb(47, 94, 235)"
+//     location.style.color="grey"
+
+//   } else {
+//     card.style.borderColor=" rgba(98, 24, 225, 0.781)"
+//   }
+// });
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
     cointainer.append(card);
   });
 }
@@ -58,9 +90,7 @@ function taskpage() {
 
 //delete events
 function deleteEvent(index) {
-    console.log(index)
     Calendly_Events.splice(index,1)
-
     appendData(Calendly_Events)
     localStorage.setItem("Calendly_Events",JSON.stringify(Calendly_Events))
 }
@@ -85,10 +115,9 @@ function filterEvents(){
     appendData(filteredData)
    }
 
-
-
-
 }
+
+
 
 
 
