@@ -13,7 +13,7 @@
 
     #mid {
       display: flex;
-      margin-top: -5px;
+      margin-top: 8px;
 
     }
 
@@ -22,7 +22,7 @@
       /* border: 1px solid black; */
       justify-content: space-evenly;
       padding: 30px;
-      position: sticky;
+      /* position: sticky; */
       top: 0;
     }
 
