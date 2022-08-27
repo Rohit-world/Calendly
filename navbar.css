@@ -13,7 +13,7 @@
 
     #mid {
       display: flex;
-      margin-top: -5px;
+      margin-top: 5px;
 
     }
 
@@ -22,7 +22,7 @@
       /* border: 1px solid black; */
       justify-content: space-evenly;
       padding: 30px;
-      position: sticky;
+      /* position: sticky; */
       top: 0;
     }
 
@@ -32,7 +32,7 @@
       list-style-type: none;
       font-weight: 600;
       font-size: 16px;
-
+      
       display: flex;
       gap: 40px;
     }
