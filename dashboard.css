@@ -86,6 +86,7 @@ background-color: rgba(107, 107, 236, 0.142);
 
 #url p{
 margin-top: -5px;
+margin-left: 10px;
 }
 #url p:last-child{
     margin-top: -10px;

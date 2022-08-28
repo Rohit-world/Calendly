@@ -5,12 +5,38 @@ padding: 0% 10%;
 justify-content: space-between;
 padding-bottom: 10px;
 border-bottom: 0.1px solid rgb(236, 228, 228);
+position: sticky;
+top: 0;
+background-color:white;
 
+
+
+
+}
+#logout{
+    /* border: 0.5px solid rgb(20, 20, 237); */
+    padding: 5px 10px;
+    margin-top: -7px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    font-weight: 550;
+}
+#logout-dash{
+    padding: 7px 12px;
+    margin-top: -7px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    font-weight: 550;
 }
 #options{
     display: flex;
     gap: 12%;
     margin-right: 5%;
+    margin-top: 20px;
 }
 #options>a{
     text-decoration: none;
@@ -27,12 +53,13 @@ img{
     color: black;
 
 }
-#options a:first-child~a{
+.a{
     color: grey;
 
 }
 
-#options a:first-child~a:hover{
+
+.a:hover{
     color: black
 
 }

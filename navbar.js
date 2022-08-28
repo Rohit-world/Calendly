@@ -18,7 +18,7 @@
   document.querySelector(".close1").addEventListener("click", function () {
 
     document.querySelector(".popup1").style.display = "none";
-    window.location.href = "navbar.html"
+    window.location.href = "index.html"
 
   })
 

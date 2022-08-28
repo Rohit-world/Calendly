@@ -1,4 +1,9 @@
 let Calendly_Events = JSON.parse(localStorage.getItem("Calendly_Events")) || [];
+let calendly_user=JSON.parse(localStorage.getItem("calendly_user")) || [];
+document.getElementById("Name").innerText=calendly_user.Name
+document.getElementById("username").innerText=calendly_user.Email
+
+
 let cointainer = document.getElementById("main");
 appendData(Calendly_Events);
 
