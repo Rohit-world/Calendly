@@ -1,10 +1,5 @@
-everyone will create their own branches and they will perform their task on the branches
+# Calendly-Clone
+It is develops a business communication platform used for teams to schedule, prepare and follow up on external meetings
 
-
-imprtant :note:   ---   No one will push any code to main branch and always pull your file from your previous branch ,
-                        no one will pull file from other peoples branch
-
-
-
-
-                        at last I will merge all files of the files with main once everyone work is done
+# Teach-Stack
+HTML | CSS | JavaScript | Api
